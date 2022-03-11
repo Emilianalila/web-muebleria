@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contactos</title>
+
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous"> 
+
+    <link rel="stylesheet" type="text/css" href="../css/style.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200;0,400;0,500;1,300;1,400&display=swap" rel="stylesheet">
+  
+  </head>
+  
+  <body>
+    <header class="contacto-header" >
+      <!-- logotipo -->
+      <div>
+        
+      </div>
+      <nav>
+        <div>
+          <ul>
+            <li class="contacto-header__li"><a href="../index.html">Inicio</a></li>
+            <li class="contacto-header__li"><a href="./productos.html">Productos</a></li>
+            <li class="contacto-header__li"><a href="./servicios.html">Servicios</a></li>
+            <li class="contacto-header__li"><a href="./contactos.html">Contactos</a></li>
+            <li class="contacto-header__li"><a href="./nosotros.html">Nosotros</a></li>
+          </ul>
+        </div>
+      </nav>
+    </header>
+    <main class="contacto-main">
+      <section class="contacto__texto">
+        <!-- texto -->
+        <div>
+          <h2>Contacto</h2>
+          <p>Escribinos, dejanos tu consulta</p>
+        </div>
+        <div>
+          <ul>
+            <li class="contacto__li" ><p><b>Encuentranos en:</b></p>
+            <!-- logotipo o icono mapa -->
+            <p><a href="http:googlemaps.com" target="_blank"><i class="fas fa-map-marker-alt"></i></a> Mexico 821, Antofagasta</p></li>
+
+            <li class="contacto__li"><p><b>Nuestros numeros de teléfono:</b></p>
+              <!-- logotipo y numero whatssapp -->
+            <p><a href="http:whatsapp.com" target="_blank"><i class="fab fa-whatsapp"></i></a> +56 964157052</p>
+            
+            <p><a href="http:whatsapp.com" target="_blank"><i class="fab fa-whatsapp"></i></a> +56 994780030</p>
+          </li>
+  
+            <li class="contacto__li">
+              <p><b>Nuestro Email:</b></p>
+              <!-- logotipo email -->
+              <p><a href=""><i class="fas fa-envelope"></i></a>
+                emilianalila@gmail.com</p>
+            </li>
+          </ul>
+        </div>
+        
+        <div>
+          <!-- formularios -->
+          <form action="emilianalila@gmail.com" method="post" enctype="text/plain" class="contacto__formulario">
+            <label for="nombre">Nombre</label>
+            <input class="contacto__input" type="text" id="nombre"  name="">
+            <br>
+            <label for="email">Email</label>
+            <input class="contacto__input"type="Email" id="email" name="">
+            <br>
+            <label for="telefono">Teléfono</label>
+            <input class="contacto__input" type="number" id="telefono" name="">
+            <br>
+            <textarea placeholder="consultas" class="contacto__textarea" ></textarea>
+            <br>
+            <!-- boton de envio del formulario -->
+            <div class="contacto__bottom">
+            
+            <input class="contacto__submit" type="submit" name="Enviar">
+            <!-- boton de restablecer del formulario -->
+            <input class="contacto__restablecer" type="reset" name="restablecer">
+            </div>
+          </form>
+        </div>
+        
+      </section>
+    </main>
+    <footer class="contacto-footer">
+      <div class="contacto-footer__texto">
+         <p>Derechos Reservados</p>
+      </div> 
+      <!-- formas de pago -->
+      <div class="nosotros-footer__targetas"> <a class="contacto__footer" href="https://visa.com" target="_blank"><img src="../assets/images/visa.png" alt="visa"></a>
+        <a class="contacto__footer" href="https://mastercard.com" target="_blank"><img src="../assets/images/master.png" alt="mastercard"></a>
+      </div>
+    </footer>
+    </body>
+</html>

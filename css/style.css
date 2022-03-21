@@ -46,8 +46,23 @@
 }
 .header__logo img{
   height: 100%; 
-
 }
+/*menu hamburger*/
+.navbar {
+      display: none;
+      background-color: #E6E6E6;
+}
+.navbar-brand img{
+  border: 2px solid black;
+}
+.nav-link{
+  font-size: 17px;
+  border-bottom: 1px solid black;
+}
+.collapse i{
+  color: black;
+}
+  
   /* nav */
 .nav__lista{
   display: flex;
@@ -77,6 +92,7 @@ header div nav ul{
       /* main */
 
 .main{
+  display: flex;
     padding: 1rem;
     position: relative;
    
@@ -434,7 +450,6 @@ form label{
     height: 86px;
     padding: 0.8rem;
     position: relative;
-    
 }
 .nosotros-footer__container{
     max-width: 1200px;
@@ -527,11 +542,9 @@ form label{
   background-color: gray;
   cursor: pointer;
 } 
-
 .grid__container__img{
   width: 100%;
   height: 100%;
-  
 }
 .overlay{
   background-image: url('https://revistamuebles.com/wp-content/2016/05/muebles-blancos.jpg');
@@ -689,35 +702,39 @@ font-size: 25px;
 text-align: center;
 margin-top: 200px;
 }
-.servicios__main{
-  margin: 0;
-  padding: 0;
-  text-align: center;
-  display: inline;
-  padding-top: 100px;
-  padding-right: 10px;
+
+.servicios-grid__container li{
+  list-style: none;
 }
 .servicios__texto{
-  float: left;
-  padding-top: 55px;
-  padding-left: 200px;
-  font-size: 20px;
   text-align: center;
- 
+  height: auto;
+  padding: 40px;
 }
 .servicios__h2{
-  font-size: 60px;
+  font-size: 45px;
+  margin-bottom: 2px;
 }
 .servicios__p{
-  float: left;
-  width: 400px;
-  height: 400px;
+  font-size: 25px;
+  height: auto;
+  padding: 2px;
+  text-decoration: none;
+  margin-bottom: 0px;
+  
 }
 .subtitulo{
   font-size: 30px;
+  text-decoration: underline;
+  text-decoration-style: wavy;
+  text-decoration-color: #108040;
+
 }
 .subtitulo2{
-  font-size: 25px;
+  font-size: 30px;
+  text-decoration: underline;
+  text-decoration-style: wavy;
+  text-decoration-color: #108040;
 }
 
      /*footer*/
@@ -760,10 +777,13 @@ margin-top: 200px;
 @media screen and (max-width: 1024px){
 /*inicio*/
     .header{
-      height: auto;
+      height: 84%;
     }
     .header__container{
      flex-direction: row;
+     }
+     .navbar {
+      display: none;
      }
      .main__h1{
      font-size: 6em;
@@ -773,13 +793,17 @@ margin-top: 200px;
      .nosotros-header{
       height: 90px;
     }
+    .row{
+      margin-right: 0px; 
+      margin-left: 0px;
+    }
     .nosotros-grid__items video{
       width: 396px;
       height: 619px;
     }
      .nosotros-main__grid{
       display: flex;
-      flex-direction: column;
+      flex-direction: ;
     }
      .nosotros__h2{
       margin-left: 0px;
@@ -789,7 +813,7 @@ margin-top: 200px;
     }
 /* productos */
    .productos-header{
-      height: 100%;
+      height: 83%;
     }
     .productos-header__container{
      flex-direction: row;
@@ -804,23 +828,16 @@ margin-top: 200px;
      grid-template-columns: 1fr;
      grid-template-rows: repeat(1, 617.9px);
     }
-    
     .servicios__texto{
-    text-align: center;
-    position: absolute;
-    top: 32%;
-    left: 40%;
-    transform: translate(-50%, -50%);
-    font-size: 22px;
-    }
+     margin-top: 20px;
+     margin: 30px;
+}
 /* contactos*/
   .contactos-grid{
     grid-template-columns: 1fr;
     grid-template-rows: repeat(1, 617.9px);
 }
-
-
-
+}
 
 
 
@@ -829,19 +846,28 @@ margin-top: 200px;
         /* movil */
 @media screen and (max-width: 600px) {
 /*inicio*/
-    .header__container{
-     flex-direction: column;
-     }
-    .nav__lista{
-      flex-wrap: wrap;
-      gap: 20px;
+    .navbar{
+      display: flex;
     }
+    .header__container{
+      flex-direction: column;
+    }
+    .navbar-brand{
+      margin-right: 5em;
+    }
+    .header__logo{
+      display: none;
+    }
+    .nav__lista{
+      display: none;
+    }
+
     .main__titulo{
       top: 55%;
       left: 50%;
     }
     .main__h1{
-      font-size: 4em;
+      font-size: 3em;
     }
     .main__h2{
       font-size: 1.5em;
@@ -854,10 +880,18 @@ margin-top: 200px;
     }
     
 /* productos */
+    .navbar{
+      display: flex;
+    }
     .productos-header__container{
-     flex-direction: column;
-     padding: 10px;
-     }
+      flex-direction: column;
+    }
+    .navbar-brand{
+      margin-right: 5em;
+    }
+    .header-productos__logo{
+      display: none;
+    }
     .productos-nav__lista{
       display: none;
     }
@@ -865,7 +899,12 @@ margin-top: 200px;
      grid-template-columns: repeat(2, 1fr);
      grid-template-rows: repeat(2, 309.9px);
      }
-
+     .overlay__title{
+     font-size: 1rem;
+     }
+     .overlay__description{
+     left: 43%;
+     }
 /*nosotros*/
     .nosotros-header__lista{
       display: none;
@@ -873,32 +912,121 @@ margin-top: 200px;
     .nosotros-header__container{
       flex-direction: column;
     }
-     .nosotros-grid__items video{
-      width: 371px;
+    .empleado{
+      margin-top: 20px;
+      padding: 5px;
+      font-size: 9px;
+    }
+    div div p{
+      margin-left: 15px;
+      margin-bottom: 9px;
+    }
+    .col-6{
+      padding: 2px;
+    }
+    .row{
+      margin-right: 0px; 
+      margin-left: 0px;
+    }
+    .nosotros-grid__items video{
+      width: 380px;
     }
     .nosotros__parrafo{
-      width: 371px;
+      width: 321px;
     }
+
 /* servicios*/
-     .servicios-grid{
-     grid-template-columns: 1fr;
-     grid-template-rows: repeat(1, 617.9px);
+    /* header*/
+    .servicios-header {
+    height: 83.7px;
     }
-    /*no funciona en movil*/
-    .servicios__texto {
-    text-align: center;
-    position: absolute;
-    top: 15%;
-    left: 40%;
-    transform: translate(-50%, -50%);
-    font-size: 22px;
+    .navbar{
+      display: flex;
     }
+    .servicios-header__container{
+      flex-direction: column;
+    }
+    .navbar-brand{
+      margin-right: 5em;
+    }
+    .header-servicios__logo{
+      display: none;
+    }
+    .servicios-nav__lista{
+      display: none;
+    }
+    /*main*/
+    .servicios__texto{
+     margin-top: 10px;
+     padding: 18px;
+    }
+    .servicios__h2{
+      font-size: 40px;
+      margin-bottom: 0px;
+    }
+    .servicios__p{
+      font-size: 20px;
+    }
+    .subtitulo{
+      font-size:23px;
+    }
+    .subtitulo2{
+      font-size:23px;
+    }
+
 /* contactos*/
     .contactos-nav__lista{
       display: none;
     }
-    .contactos-header__container{
-      justify-content: center;
-      width: auto;/*no funciona*/
+    .contactos-header{
+      height: 84px;
     }
+    .contactos-header__container{
+      flex-direction: column;
+    }
+    .navbar{
+      display: flex;
+    }
+    .navbar-brand{
+      margin-right: 5em;
+    }
+    .header-contactos__logo{
+      display: none;
+    }
+    #carouselExampleControls {
+    height: auto;
+    }
+    .contacto-main{
+      font-size: 18px;
+      padding: 9px;
+      line-height: 30px;
+    }
+    }
+
+@media screen and (max-width: 320px){
+/* contactos*/
+    .contacto-main{
+      font-size: 18px;
+      padding: 2px;
+    }
+    .contacto__textarea{
+      width: 249px;
+    }
+/*nosotros*/
+    .nosotros-grid__items video{
+      width: 320px;
+    }
+/*servicios*/
+    .servicios__texto{
+     margin-top: 0px;
+     padding: 3px;
+    }
+    .servicios__h2{
+      font-size: 30px;
+    }
+    .servicios__p{
+      font-size: 19px;
+    }
+    
+  
 }

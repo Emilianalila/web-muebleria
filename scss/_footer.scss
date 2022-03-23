@@ -1,0 +1,182 @@
+
+/*.....inicio......*/
+
+     /*footer*/
+.footer{
+    background-color: $secondary-color;
+    height: 86px;
+    padding: 0.5rem;
+    position: relative;
+    box-sizing: border-box;
+}
+.footer__container{
+  max-width: 1200px;
+  margin: 0 auto;
+  height: 100%;
+  
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+div div p{
+  margin-bottom: 0rem;
+}
+
+.footer__texto{
+    color: black;
+    margin-top: 15px;
+}
+.footer__redes{
+    text-align: center;
+    font-weight: 700;
+    font-size: 40px;
+}
+
+.footer__redes a{
+    color: $primary-color;
+}
+.footer__sombra:hover {
+  color: black;
+}
+
+/* .....contactos....... */
+
+ /*footer*/
+.contactos-footer{
+    background-color: $secondary-color;
+    height: 86px;
+    padding: 0.8rem;
+    position: relative;
+}
+.contactos-footer__container{
+    max-width: 1200px;
+    margin: 0 auto;
+    height: 100%;
+  
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.contactos-footer__texto{
+    color: black;
+    margin-top: 11px;
+}
+.contactos-footer__targetas{
+    text-align: center;
+    font-weight: 700;
+    font-size: 46px;    
+}
+.contactos-footer__targetas a{
+    color: $primary-color;
+}
+.footer__sombra:hover {
+  color: black;
+}
+
+/*.......nosotros.........*/
+/*footer*/
+.nosotros-footer{
+    background-color: $secondary-color;
+    height: 86px;
+    padding: 0.8rem;
+    position: relative;
+}
+.nosotros-footer__container{
+    max-width: 1200px;
+    margin: 0 auto;
+    height: 100%;
+  
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.nosotros-footer__texto{
+    color: black;
+    margin-top: 10px;
+}
+.nosotros-footer__targetas{
+    text-align: center;
+    font-weight: 700;
+    font-size: 46px;    
+}
+.nosotros-footer__targetas a{
+    color: $primary-color;
+}
+.footer__sombra:hover {
+  color: black;
+}
+
+
+/*........producto......*/
+/*footer*/
+.producto-footer{
+    background-color: $secondary-color;
+    height: 86px;
+    padding: 0.8rem;
+    position: relative;
+    
+}
+.producto-footer__container{
+  max-width: 1200px;
+  margin: 0 auto;
+  height: 100%;
+  
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.producto-footer__texto{
+    color: black;
+    margin-top: 10px;
+}
+.producto-footer__targetas{
+    text-align: center;
+    font-weight: 700;
+    font-size: 45px;
+}
+.producto-footer__targetas a{
+    color: $primary-color;
+}
+.footer__sombra:hover {
+  color: black;
+}
+
+/*..........servicios......*/
+/*footer*/
+.servicio-footer{
+    background-color: $secondary-color;
+    height: 86px;
+    padding: 0.8rem;
+    position: relative;
+}
+.servicio-footer__container{
+    max-width: 1200px;
+    margin: 0 auto;
+    height: 100%;
+  
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.servicio-footer__texto{
+    color: black;
+    margin-top: 11px;
+}
+.servicio-footer__targetas{
+    text-align: center;
+    font-weight: 700;
+    font-size: 46px;    
+}
+.servicio-footer__targetas a{
+    color: $primary-color;
+}
+.footer__sombra:hover {
+  color: black;
+}
+  
+

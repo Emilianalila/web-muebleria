@@ -1,0 +1,274 @@
+
+/*...... media querys...... */
+  
+         /* tablet */
+@media screen and (max-width: 1024px){
+
+/*inicio*/
+    .header{
+      height: 84%;
+    }
+    .header__container{
+     flex-direction: row;
+     }
+     .navbar {
+      display: none;
+     }
+     .main__h1{
+     font-size: 6em;
+     }
+     .main__container{
+      height: 79.9vh;
+      }
+/*nosotros*/
+     .nosotros-header{
+      height: 90px;
+    }
+    .row{
+      margin-right: 0px; 
+      margin-left: 0px;
+    }
+    .nosotros-grid__items video{
+      width: 396px;
+      height: 619px;
+    }
+     .nosotros-main__grid{
+      display: flex;
+    }
+     .nosotros__h2{
+      margin-left: 0px;
+    }
+    .nosotros__parrafo{
+      margin-left: 0px;
+    }
+    .col-12{
+      width: 100%
+    }
+/* productos */
+   .productos-header{
+      height: 83%;
+    }
+    .productos-header__container{
+     flex-direction: row;
+    }
+    .productos-grid{
+     grid-template-columns: repeat(3, 1fr);
+     grid-template-rows: repeat(2, 309.9px);
+     }
+/* servicios*/
+    .servicios-grid{
+     grid-template-columns: 1fr;
+     grid-template-rows: repeat(1, 617.9px);
+    }
+    .servicios__texto{
+     margin-top: 20px;
+     margin: 30px;
+    }
+/* contactos*/
+    .contactos-grid{
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(1, 724.9px);
+    }
+    .contactos-grid__container img{
+    height: 100vh;
+    }
+    .contacto-main{
+    line-height: 45px;
+    font-size: 27px;
+   }
+}
+
+
+
+
+
+        /* movil */
+@media screen and (max-width: 600px) {
+
+/*inicio*/
+    .navbar{
+      display: flex;
+    }
+    .header__container{
+      flex-direction: column;
+    }
+    .navbar-brand{
+      margin-right: 5em;
+    }
+    .header__logo{
+      display: none;
+    }
+    .nav__lista{
+      display: none;
+    }
+    .main__titulo{
+      top: 55%;
+      left: 50%;
+    }
+    .main__h1{
+      font-size: 3em;
+    }
+    .main__h2{
+      font-size: 1.5em;
+    }
+    .main__p{
+      font-size: 1.4em;
+    }
+    .main__container{
+      text-align: center;
+    }
+    
+/* productos */
+    .navbar{
+      display: flex;
+    }
+    .productos-header__container{
+      flex-direction: column;
+    }
+    .navbar-brand{
+      margin-right: 5em;
+    }
+    .header-productos__logo{
+      display: none;
+    }
+    .productos-nav__lista{
+      display: none;
+    }
+    .productos-grid{
+     grid-template-columns: repeat(2, 1fr);
+     grid-template-rows: repeat(2, 309.9px);
+     }
+     .overlay__title{
+     font-size: 1rem;
+     }
+     .overlay__description{
+     left: 43%;
+     }
+/*nosotros*/
+    .nosotros-header__lista{
+      display: none;
+    }
+    .nosotros-header__container{
+      flex-direction: column;
+    }
+    .empleado{
+      margin-top: 20px;
+      padding: 5px;
+      font-size: 9px;
+    }
+    div div p{
+      margin-left: 15px;
+      margin-bottom: 9px;
+    }
+    .col-6{
+      padding: 2px;
+    }
+    .row{
+      margin-right: 0px; 
+      margin-left: 0px;
+    }
+    .nosotros-grid__items video{
+      width: 380px;
+    }
+    .nosotros__parrafo{
+      width: 321px;
+    }
+
+/* servicios*/
+    /* header*/
+    .servicios-header {
+    height: 83.7px;
+    }
+    .navbar{
+      display: flex;
+    }
+    .servicios-header__container{
+      flex-direction: column;
+    }
+    .navbar-brand{
+      margin-right: 5em;
+    }
+    .header-servicios__logo{
+      display: none;
+    }
+    .servicios-nav__lista{
+      display: none;
+    }
+    /*main*/
+    .servicios__texto{
+     margin-top: 10px;
+     padding: 18px;
+    }
+    .servicios__h2{
+      font-size: 40px;
+      margin-bottom: 0px;
+    }
+    .servicios__p{
+      font-size: 20px;
+    }
+    .subtitulo{
+      font-size:23px;
+    }
+    .subtitulo2{
+      font-size:23px;
+    }
+
+/* contactos*/
+    .contactos-nav__lista{
+      display: none;
+    }
+    .contactos-header{
+      height: 84px;
+    }
+    .contactos-header__container{
+      flex-direction: column;
+    }
+    .navbar{
+      display: flex;
+    }
+    .navbar-brand{
+      margin-right: 5em;
+    }
+    .header-contactos__logo{
+      display: none;
+    }
+    #carouselExampleControls {
+    height: auto;
+    }
+    .contacto-main{
+      font-size: 18px;
+      padding: 9px;
+      line-height: 30px;
+    }
+    .white:hover{
+      width: 260px;
+    }
+    }
+
+@media screen and (max-width: 320px){
+/* contactos*/
+    .contacto-main{
+      font-size: 18px;
+      padding: 2px;
+    }
+    .contacto__textarea{
+      width: 249px;
+    }
+/*nosotros*/
+    .nosotros-grid__items video{
+      width: 320px;
+    }
+/*servicios*/
+    .servicios__texto{
+     margin-top: 0px;
+     padding: 3px;
+    }
+    .servicios__h2{
+      font-size: 30px;
+    }
+    .servicios__p{
+      font-size: 19px;
+    }
+    
+
+}

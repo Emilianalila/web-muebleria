@@ -12,12 +12,9 @@
   max-width: 100%;
   margin: 0 auto;
   height: 100%;
-  
-  
-  display: flex;
   flex-direction: row;
-  justify-content: space-between;
-  align-items: center;
+  
+  @include crearflex(space-between, center)
 }
   /* logo */
 .header__logo{
@@ -90,11 +87,9 @@ header div nav ul{
   max-width: 100%;
   margin: 0 auto;
   height: 100%;
-  
-  display: flex;
   flex-direction: row;
-  justify-content: space-between;
-  align-items: center;
+  
+  @include crearflex(space-between, center)
 }
     /* logo */
 .header-contactos__logo{
@@ -143,11 +138,9 @@ header div nav ul{
   max-width: 100%;
   margin: 0 auto;
   height: 100%;
-  
-  display: flex;
   flex-direction: row;
-  justify-content: space-between;
-  align-items: center;
+
+  @include crearflex(space-between, center)
 }
 .nosotros__logo a{
   display: inline-block;
@@ -195,11 +188,9 @@ header div nav ul{
   max-width: 100%;
   margin: 0 auto;
   height: 100%;
-  
-  display: flex;
   flex-direction: row;
-  justify-content: space-between;
-  align-items: center;
+  
+  @include crearflex(space-between, center)
 }
 /* logo */
 .header-productos__logo{
@@ -249,11 +240,9 @@ header div nav ul{
   max-width: 100%;
   margin: 0 auto;
   height: 100%;
-  
-  display: flex;
   flex-direction: row;
-  justify-content: space-between;
-  align-items: center;
+  
+  @include crearflex(space-between, center)
 }
     /* logo */
 .header-servicios__logo{

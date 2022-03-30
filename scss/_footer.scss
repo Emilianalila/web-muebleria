@@ -13,19 +13,19 @@
   max-width: 1200px;
   margin: 0 auto;
   height: 100%;
-  
-  display: flex;
   flex-direction: column;
-  justify-content: center;
-  align-items: center;
+  
+  @include crearflex(center, center)
 }
-div div p{
+
+/*div div p{
   margin-bottom: 0rem;
-}
+}*/
 
 .footer__texto{
     color: black;
     margin-top: 15px;
+    margin-bottom: 0rem;
 }
 .footer__redes{
     text-align: center;
@@ -50,18 +50,20 @@ div div p{
     position: relative;
 }
 .contactos-footer__container{
-    max-width: 1200px;
+
+    @extend .footer__container;
+
+    /*max-width: 1200px;
     margin: 0 auto;
     height: 100%;
-  
-    display: flex;
     flex-direction: column;
-    justify-content: center;
-    align-items: center;
+
+    @mixin crearflex(center, center)*/
 }
 .contactos-footer__texto{
     color: black;
     margin-top: 11px;
+    margin-bottom: 0rem;
 }
 .contactos-footer__targetas{
     text-align: center;
@@ -84,18 +86,12 @@ div div p{
     position: relative;
 }
 .nosotros-footer__container{
-    max-width: 1200px;
-    margin: 0 auto;
-    height: 100%;
-  
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+@extend .footer__container;
 }
 .nosotros-footer__texto{
     color: black;
     margin-top: 10px;
+    margin-bottom: 0rem;
 }
 .nosotros-footer__targetas{
     text-align: center;
@@ -123,15 +119,15 @@ div div p{
   max-width: 1200px;
   margin: 0 auto;
   height: 100%;
-  
-  display: flex;
   flex-direction: column;
-  justify-content: center;
-  align-items: center;
+  
+  @include crearflex(center, center)
+
 }
 .producto-footer__texto{
     color: black;
     margin-top: 10px;
+    margin-bottom: 0rem;
 }
 .producto-footer__targetas{
     text-align: center;
@@ -157,15 +153,15 @@ div div p{
     max-width: 1200px;
     margin: 0 auto;
     height: 100%;
-  
-    display: flex;
     flex-direction: column;
-    justify-content: center;
-    align-items: center;
+    
+    @include crearflex(center, center)
+
 }
 .servicio-footer__texto{
     color: black;
     margin-top: 11px;
+    margin-bottom: 0rem;
 }
 .servicio-footer__targetas{
     text-align: center;

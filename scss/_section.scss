@@ -1,5 +1,5 @@
 
-  /*Inicio*/
+/*..............Inicio................*/
   
   /* main */
 
@@ -13,11 +13,9 @@
    max-width: 1200px;
    margin: 0 auto;
    height: 75.3vh;
-   
-   display: flex;
    flex-direction: column;
-   justify-content: center;
-   align-items: center;  
+   
+   @include crearflex(center, center)  
 }
 .main__h1{
     font-size: 5em;
@@ -55,7 +53,7 @@
 }
 
 
-/*.......... Contactos.......... */
+/*............... Contactos........... */
      /* main*/
 .contactos-grid{
   display: grid;
@@ -86,7 +84,7 @@
 }
    /*formulario*/
 .contacto-main{
-   line-height: 35px;
+   line-height: 25px;
    font-size: 25px;
    font-weight: bold;
    padding: 19.5px;
@@ -148,15 +146,14 @@ form label{
 }
      
 
-/* .............Nosotros......... */
+/* ................Nosotros............ */
   /* main*/
 
 .nosotros-grid__items{
-  display: flex;
   flex-direction: column;
-  justify-content: center; 
-  align-items: center;
   padding: 5px;
+  
+  @include crearflex(center, center)
 }
 .empleado{
    padding: 10px;
@@ -190,7 +187,7 @@ form label{
 }
  
      
-/*........... Productos....... */
+/*............... Productos.......... */
      /* main*/    
 .productos-grid{
   display: grid;
@@ -241,7 +238,7 @@ form label{
 }
 
     
-/* ...........Servicios....... */
+/* ..............Servicios............ */
      /* main*/
 .servicios-grid{
   display: grid;

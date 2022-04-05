@@ -96,16 +96,18 @@
 
 body {
   font-family: 'Nunito', sans-serif;
-  background-image: url("https://revistamuebles.com/wp-content/2016/05/muebles-blancos.jpg");
+  background-image: url("https://wallpaperaccess.com/full/2076086.jpg");
+  /*background-image: url("https://revistamuebles.com/wp-content/2016/05/muebles-blancos.jpg");*/
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
-  background-attachment: scroll; }
+  background-attachment: scroll;
+  height: 100vh; }
 
 /*..... inicio.... */
 .header {
   background-color: #E6E6E6;
-  height: 80px;
+  /*height: 80px;*/
   padding: 0.5rem 1rem;
   position: relative; }
 
@@ -157,7 +159,8 @@ body {
   margin-left: 2rem;
   font-size: 22px;
   font-weight: bold;
-  cursor: pointer; }
+  cursor: pointer;
+  position: relative; }
   .nav__li a {
     color: #108040;
     text-decoration: none; }
@@ -165,6 +168,22 @@ body {
       color: black;
       background-color: #FFFFFF;
       border-radius: 0.4em; }
+
+.nav__li a::after {
+  content: "";
+  position: absolute;
+  top: 100%;
+  left: 0%;
+  width: 100%;
+  height: 1.5px;
+  background-color: #e9893a;
+  transform: scalex(0);
+  transform-origin: right;
+  transition: transform 0.5s; }
+
+.nav__li a:hover::after {
+  transform: scalex(1);
+  transform-origin: left; }
 
 header div nav ul {
   margin-bottom: 0rem; }
@@ -206,7 +225,8 @@ header div nav ul {
   margin-left: 2rem;
   font-size: 22px;
   font-weight: bold;
-  cursor: pointer; }
+  cursor: pointer;
+  position: relative; }
   .contactos-header__li a {
     color: #108040;
     text-decoration: none; }
@@ -214,6 +234,22 @@ header div nav ul {
       color: black;
       background-color: #FFFFFF;
       border-radius: 0.4em; }
+
+.contactos-header__li a::after {
+  content: "";
+  position: absolute;
+  top: 100%;
+  left: 0%;
+  width: 100%;
+  height: 1.5px;
+  background-color: #e9893a;
+  transform: scalex(0);
+  transform-origin: right;
+  transition: transform 0.5s; }
+
+.contactos-header__li a:hover::after {
+  transform: scalex(1);
+  transform-origin: left; }
 
 /* .............Nosotros......... */
 /*header*/
@@ -242,18 +278,38 @@ header div nav ul {
   display: flex;
   align-content: flex-end;
   text-align: left;
-  margin-right: 10px;
+  margin: 10px;
   width: 600px; }
 
+/*.nosotros-header__li{
+    display: inline-block;
+    padding-right: 9px;
+    padding-left: 9px; 
+    margin: 0 auto;
+    width: 120px;
+    box-sizing: border-box;
+    font-size: 1.3em;
+    font-weight: bold;
+    text-align: right;
+    position: relative;
+
+    a{
+    color: $primary-color;
+    text-decoration: none;
+    &:hover {
+    color: black;
+    background-color: #FFFFFF;
+    border-radius: 0.4em; 
+}
+}
+}*/
 .nosotros-header__li {
-  display: inline-block;
-  padding: 9px;
-  margin: 0 auto;
-  width: 120px;
-  box-sizing: border-box;
-  font-size: 1.3em;
+  margin-left: 2rem;
+  font-size: 22px;
   font-weight: bold;
-  text-align: right; }
+  cursor: pointer;
+  position: relative;
+  list-style: none; }
   .nosotros-header__li a {
     color: #108040;
     text-decoration: none; }
@@ -262,10 +318,26 @@ header div nav ul {
       background-color: #FFFFFF;
       border-radius: 0.4em; }
 
+.nosotros-header__li a::after {
+  content: "";
+  position: absolute;
+  top: 100%;
+  left: 0%;
+  width: 100%;
+  height: 1.5px;
+  background-color: #e9893a;
+  transform: scalex(0);
+  transform-origin: right;
+  transition: transform 0.5s; }
+
+.nosotros-header__li a:hover::after {
+  transform: scalex(1);
+  transform-origin: left; }
+
 /*........... Productos....... */
 .productos-header {
   background-color: #E6E6E6;
-  height: 80px;
+  height: px;
   padding: 0.5rem 1rem;
   position: relative; }
 
@@ -298,7 +370,8 @@ header div nav ul {
   margin-left: 2rem;
   font-size: 22px;
   font-weight: bold;
-  cursor: pointer; }
+  cursor: pointer;
+  position: relative; }
   .productos-header__li a {
     color: #108040;
     text-decoration: none; }
@@ -306,6 +379,22 @@ header div nav ul {
       color: black;
       background-color: #FFFFFF;
       border-radius: 0.4em; }
+
+.productos-header__li a::after {
+  content: "";
+  position: absolute;
+  top: 100%;
+  left: 0%;
+  width: 100%;
+  height: 1.5px;
+  background-color: #e9893a;
+  transform: scalex(0);
+  transform-origin: right;
+  transition: transform 0.5s; }
+
+.productos-header__li a:hover::after {
+  transform: scalex(1);
+  transform-origin: left; }
 
 /* ...........Servicios....... */
 /*header*/
@@ -344,7 +433,8 @@ header div nav ul {
   margin-left: 2rem;
   font-size: 22px;
   font-weight: bold;
-  cursor: pointer; }
+  cursor: pointer;
+  position: relative; }
   .servicios-header__li a {
     color: #108040;
     text-decoration: none; }
@@ -353,14 +443,32 @@ header div nav ul {
       background-color: #FFFFFF;
       border-radius: 0.4em; }
 
+.servicios-header__li a::after {
+  content: "";
+  position: absolute;
+  top: 100%;
+  left: 0%;
+  width: 100%;
+  height: 1.5px;
+  background-color: #e9893a;
+  transform: scalex(0);
+  transform-origin: right;
+  transition: transform 0.5s; }
+
+.servicios-header__li a:hover::after {
+  transform: scalex(1);
+  transform-origin: left; }
+
 /*.....inicio......*/
 /*footer*/
 .footer {
-  background-color: #E6E6E6;
+  /*background-color: $secondary-color;*/
   height: 86px;
   padding: 0.5rem;
   position: relative;
-  box-sizing: border-box; }
+  box-sizing: border-box;
+  bottom: 0;
+  width: 100vw; }
 
 .footer__container, .contactos-footer__container, .nosotros-footer__container {
   max-width: 1200px;
@@ -371,9 +479,6 @@ header div nav ul {
   justify-content: center;
   align-items: center; }
 
-/*div div p{
-  margin-bottom: 0rem;
-}*/
 .footer__texto {
   color: black;
   margin-top: 15px;
@@ -385,7 +490,7 @@ header div nav ul {
   font-size: 40px; }
 
 .footer__redes a {
-  color: #108040; }
+  color: #e9893a; }
 
 .footer__sombra:hover {
   color: black; }
@@ -397,14 +502,6 @@ header div nav ul {
   height: 86px;
   padding: 0.8rem;
   position: relative; }
-
-.contactos-footer__container {
-  /*max-width: 1200px;
-    margin: 0 auto;
-    height: 100%;
-    flex-direction: column;
-
-    @mixin crearflex(center, center)*/ }
 
 .contactos-footer__texto {
   color: black;
@@ -474,7 +571,7 @@ header div nav ul {
   font-size: 45px; }
 
 .producto-footer__targetas a {
-  color: #108040; }
+  color: #e9893a; }
 
 .footer__sombra:hover {
   color: black; }
@@ -516,14 +613,15 @@ header div nav ul {
 /* main */
 .main {
   display: flex;
-  padding: 1rem;
+  padding: 0.5rem;
   position: relative; }
 
 .main__container {
   max-width: 1200px;
   margin: 0 auto;
-  height: 75.3vh;
+  height: 91.3vh;
   flex-direction: column;
+  padding-bottom: 125px;
   display: flex;
   justify-content: center;
   align-items: center; }
@@ -531,7 +629,7 @@ header div nav ul {
 .main__h1 {
   font-size: 5em;
   font-weight: normal;
-  color: #191919; }
+  color: #E6E6E6; }
 
 .main__h2 {
   font-size: 2em;
@@ -549,15 +647,141 @@ header div nav ul {
   box-sizing: content-box; }
 
 .main__p {
-  animation-duration: 5s;
+  animation-duration: 3.5s;
   animation-name: p;
   animation-iteration-count: infinite; }
 
 @keyframes p {
   0% {
-    opacity: 0.7; }
+    opacity: 0.9;
+    color: black; }
   100% {
-    opacity: 1; } }
+    opacity: 1;
+    color: white; } }
+
+.containervendidos {
+  position: relative;
+  border-bottom: 4px solid #e9893a;
+  background-image: linear-gradient(to top, #f9f8f7, #f5eee8, #f1e5da, #eddbcc, #e9d1be); }
+
+.bestsellers {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  padding: 7px; }
+
+.textosellers {
+  font-size: 24px;
+  text-align: center;
+  padding: 2px;
+  text-decoration: underline; }
+
+.vendidos {
+  padding: 10px;
+  height: 100%;
+  border: 1px solid black; }
+
+.bestsellers-imagen {
+  width: 250px;
+  height: 250px; }
+
+.card-body {
+  line-height: 8px;
+  text-decoration: none;
+  padding: 3px; }
+
+.boton {
+  background-color: #351d15;
+  border: 1px solid black;
+  text-decoration: none;
+  border-radius: 6px; }
+
+/*.....ofertas.......*/
+.inicio-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(1, 317.9px);
+  row-gap: 4rem;
+  column-gap: 4rem;
+  width: 100%;
+  margin: 0rem auto;
+  border-bottom: 3px solid #e9893a;
+  padding: 50px;
+  justify-content: center;
+  align-content: center;
+  cursor: pointer;
+  background-image: inear-gradient(to top, #f9f8f7, #f5eee8, #f1e5da, #eddbcc, #e9d1be); }
+
+.inicio-grid__container img {
+  width: 80%;
+  height: 100%; }
+
+/* animacion */
+/*.....imagen... 1 */
+.overlay-inicio1 {
+  background-image: url("../assets/images/ofertas2.png");
+  background-position: center;
+  background-size: cover;
+  height: 101%;
+  opacity: 0;
+  z-index: 1;
+  overflow: hidden;
+  transform: translate(0%, -100%);
+  transition: 0.5s ease;
+  position: relative; }
+
+.inicio-grid__container:hover .overlay-inicio1 {
+  opacity: 1; }
+
+.inicio-overlay__title1 {
+  font-size: 25px;
+  text-align: center;
+  margin-top: 130px;
+  color: black; }
+
+/*.....imagen... 2 */
+.overlay-inicio2 {
+  background-image: url("https://wallpaperaccess.com/full/2076086.jpg");
+  background-position: center;
+  background-size: cover;
+  height: 101%;
+  opacity: 0;
+  z-index: 1;
+  overflow: hidden;
+  transform: translate(0%, -100%);
+  transition: 0.5s ease;
+  position: relative; }
+
+.inicio-grid__container:hover .overlay-inicio2 {
+  opacity: 1; }
+
+.inicio-overlay__title2 {
+  font-size: 25px;
+  text-align: center;
+  margin-top: 160px;
+  color: black; }
+
+/*.....imagen... 3*/
+.overlay-inicio3 {
+  background-image: url("../assets/images/ofertas4.png");
+  background-position: center;
+  background-size: cover;
+  height: 101%;
+  opacity: 0;
+  z-index: 1;
+  overflow: hidden;
+  transform: translate(0%, -100%);
+  transition: 0.5s ease;
+  position: relative; }
+
+.inicio-grid__container:hover .overlay-inicio3 {
+  opacity: 1; }
+
+.inicio-overlay__title3 {
+  font-size: 25px;
+  text-align: center;
+  margin-top: 160px;
+  color: white; }
 
 /*............... Contactos........... */
 /* main*/
@@ -588,11 +812,15 @@ header div nav ul {
 .contacto-main {
   line-height: 25px;
   font-size: 25px;
-  font-weight: bold;
+  font-weight: normal;
   padding: 19.5px;
   text-align: center;
   border: 1.5px solid black;
-  margin: auto; }
+  margin: auto;
+  color: white;
+  background-image: url("https://wallpaperaccess.com/full/2076086.jpg");
+  background-position: center;
+  background-size: cover; }
 
 .white:hover {
   color: black;
@@ -655,6 +883,12 @@ form label {
   justify-content: center;
   align-items: center; }
 
+.col-12fondo {
+  background-image: url("https://wallpaperaccess.com/full/2076086.jpg");
+  background-position: center;
+  background-size: cover;
+  /*background-image: linear-gradient(to bottom, #fbfaf4, #faf9f3, #f8f9f1, #f7f8f0, #f5f8ef, #ecf3e4, #e3edd9, #d9e8ce, #c6dcb7, #b3d09f, #a0c489, #8db872);*/ }
+
 .empleado {
   padding: 10px;
   margin-top: 50px;
@@ -686,52 +920,71 @@ form label {
 
 /*............... Productos.......... */
 /* main*/
-.productos-grid {
-  display: grid;
-  grid-template-columns: repeat(6, 1fr);
-  grid-template-rows: repeat(2, 309.9px);
-  row-gap: 0.1rem;
-  column-gap: 0.1rem;
-  width: 100%;
-  margin: 0rem auto;
-  border: 3.5px solid #108040;
-  background-color: gray;
-  cursor: pointer; }
+.containerproductos {
+  border-bottom: 3px solid #e9893a;
+  background-image: linear-gradient(to bottom, #f9f8f7, #f5eee8, #f1e5da, #eddbcc, #e9d1be); }
 
-.grid__container__img {
-  width: 100%;
-  height: 100%; }
-
-.overlay {
-  background-image: url("https://revistamuebles.com/wp-content/2016/05/muebles-blancos.jpg");
-  height: 102%;
-  opacity: 0;
-  z-index: 1;
-  transform: translate(0%, -100%);
-  transition: 0.5s ease;
+.containerproductos a {
+  text-decoration: none;
   position: relative; }
 
-.grid__container:hover .overlay {
-  opacity: 1; }
+.containerproductos2 {
+  border-bottom: 3px solid #e9893a;
+  background-image: linear-gradient(to top, #f9f8f7, #f5eee8, #f1e5da, #eddbcc, #e9d1be); }
 
-.overlay__title {
-  color: black;
-  font-size: 1.4rem;
+.productos2 {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  padding: 7px; }
+
+.textoproductos {
+  font-size: 24px;
   text-align: center;
-  position: absolute;
-  top: 45%;
-  left: 50%;
-  transform: translate(-50%, -50%); }
-
-.overlay__description {
+  padding: 2px;
+  text-decoration: underline;
   color: black;
+  padding-top: 15px; }
+
+/*....no funciona....*/
+.relative {
+  position: relative; }
+
+div a::after {
+  content: "";
+  position: absolute;
+  top: 100%;
+  left: 0%;
+  width: 100%;
+  height: 3px;
+  background-color: #e9893a;
+  transform: scalex(0);
+  transform-origin: right;
+  transition: transform 0.5s; }
+
+div a :hover ::after {
+  transform: scalex(1);
+  transform-origin: left; }
+
+.productostargetas {
+  padding: 10px;
+  height: 100%;
+  border: 1px solid black; }
+
+.producto-imagen {
+  width: 250px;
+  height: 250px; }
+
+.card-productos {
+  line-height: 8px;
+  text-decoration: none;
+  padding: 3px; }
+
+.boton-comprar {
+  background-color: #351d15;
   border: 1px solid black;
-  font-size: 0.9rem;
-  text-align: center;
-  position: absolute;
-  top: 55%;
-  left: 50%;
-  transform: translate(-50%, -50%); }
+  text-decoration: none;
+  border-radius: 6px; }
 
 /* ..............Servicios............ */
 /* main*/
@@ -744,7 +997,9 @@ form label {
   width: 100%;
   margin: 0rem auto;
   border: 2.5px solid white;
-  cursor: pointer; }
+  cursor: pointer;
+  background-image: linear-gradient(to bottom, #f9f8f7, #f5eee8, #f1e5da, #eddbcc, #e9d1be);
+  /*background-image: linear-gradient(#FF8964, #FFD993, #FFEECA);*/ }
 
 .servicios-grid__container img {
   width: 100%;
@@ -802,22 +1057,69 @@ form label {
   text-decoration-style: wavy;
   text-decoration-color: #108040; }
 
+.containerservicios {
+  border-bottom: 3px solid #e9893a;
+  background-image: linear-gradient(to bottom, #f9f8f7, #f5eee8, #f1e5da, #eddbcc, #e9d1be); }
+
+.containerproductos a {
+  text-decoration: none;
+  position: relative; }
+
+.servicios2 {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  padding: 7px; }
+
+.textoservicios {
+  font-size: 24px;
+  text-align: center;
+  padding: 2px;
+  text-decoration: underline;
+  color: black;
+  padding-top: 15px; }
+
+.serviciostargetas {
+  padding: 10px;
+  height: 100%;
+  border: 1px solid black; }
+
+.servicio-imagen {
+  width: 250px;
+  height: 250px; }
+
+.card-productos {
+  line-height: 8px;
+  text-decoration: none;
+  padding: 3px; }
+
+.boton-comprar {
+  background-color: #351d15;
+  border: 1px solid black;
+  text-decoration: none;
+  border-radius: 6px; }
+
 /*...... media querys...... */
 /* tablet */
 @media screen and (max-width: 1024px) {
   /*inicio*/
   .header {
-    height: 84%; }
+    /*height: 84%;*/ }
   .header__container {
     flex-direction: row; }
   .navbar {
     display: none; }
+  .main {
+    padding: 2.3rem; }
   .main__h1 {
-    font-size: 6em; }
+    font-size: 5em; }
   .main__container {
-    height: 79.9vh; }
+    height: 79.9vh;
+    padding-bottom: 75px; }
   .footer__texto {
     font-size: 15px; }
+  .inicio-grid {
+    column-gap: 0.1rem; }
   /*nosotros*/
   .nosotros-header {
     height: 90px; }
@@ -847,7 +1149,7 @@ form label {
     font-size: 15px; }
   /* productos */
   .productos-header {
-    height: 83%; }
+    /*height: 83%;*/ }
   .productos-header__container {
     flex-direction: row; }
   .productos-grid {
@@ -889,6 +1191,8 @@ form label {
     display: none; }
   .nav__lista {
     display: none; }
+  .main {
+    padding: 1.6rem; }
   .main__titulo {
     top: 55%;
     left: 50%; }
@@ -900,7 +1204,35 @@ form label {
     font-size: 1.4em; }
   .main__container {
     text-align: center; }
+  .containervendidos {
+    text-align: center; }
+  .bestsellers {
+    display: inline-block; }
+  .vendidos {
+    margin: 10px; }
+  .card-body {
+    padding: 3px;
+    line-height: 13px; }
+  .inicio-grid {
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(1, 317.9px);
+    column-gap: 0.1rem;
+    row-gap: 0.1rem;
+    padding-right: 40px; }
+  .inicio-grid__container img {
+    width: auto;
+    height: auto; }
+  .inicio-grid__container {
+    height: 300px; }
+  .overlay-inicio1 {
+    height: 70%; }
+  .overlay-inicio2 {
+    height: 80%; }
+  .overlay-inicio3 {
+    height: 80%; }
   /* productos */
+  body {
+    background-image: none; }
   .navbar {
     display: flex; }
   .productos-header__container {
@@ -911,13 +1243,17 @@ form label {
     display: none; }
   .productos-nav__lista {
     display: none; }
-  .productos-grid {
-    grid-template-columns: repeat(2, 1fr);
-    grid-template-rows: repeat(2, 309.9px); }
-  .overlay__title {
-    font-size: 1rem; }
-  .overlay__description {
-    left: 43%; }
+  .containerproductos {
+    text-align: center; }
+  .containerproductos2 {
+    text-align: center; }
+  .productos2 {
+    display: inline-block; }
+  .productostargetas {
+    margin: 10px; }
+  .card-productos {
+    padding: 3px;
+    line-height: 13px; }
   /*nosotros*/
   .nosotros-header__lista {
     display: none; }

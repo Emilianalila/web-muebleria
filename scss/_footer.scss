@@ -3,11 +3,14 @@
 
      /*footer*/
 .footer{
-    background-color: $secondary-color;
+
+    /*background-color: $secondary-color;*/
     height: 86px;
     padding: 0.5rem;
     position: relative;
     box-sizing: border-box;
+    bottom: 0;
+    width: 100vw;
 }
 .footer__container{
   max-width: 1200px;
@@ -17,10 +20,6 @@
   
   @include crearflex(center, center)
 }
-
-/*div div p{
-  margin-bottom: 0rem;
-}*/
 
 .footer__texto{
     color: black;
@@ -34,7 +33,7 @@
 }
 
 .footer__redes a{
-    color: $primary-color;
+    color: #e9893a;
 }
 .footer__sombra:hover {
   color: black;
@@ -52,13 +51,6 @@
 .contactos-footer__container{
 
     @extend .footer__container;
-
-    /*max-width: 1200px;
-    margin: 0 auto;
-    height: 100%;
-    flex-direction: column;
-
-    @mixin crearflex(center, center)*/
 }
 .contactos-footer__texto{
     color: black;
@@ -135,7 +127,7 @@
     font-size: 45px;
 }
 .producto-footer__targetas a{
-    color: $primary-color;
+    color: #e9893a;
 }
 .footer__sombra:hover {
   color: black;

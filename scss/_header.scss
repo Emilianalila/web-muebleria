@@ -3,7 +3,7 @@
 
 .header{
   background-color: $secondary-color;
-  height: 80px;
+  /*height: 80px;*/
   padding: 0.5rem 1rem;
   position: relative;
 
@@ -28,8 +28,8 @@
 }
 /*menu hamburger*/
 .navbar {
-      display: none;
-      background-color: $secondary-color;
+  display: none;
+  background-color: $secondary-color;
 }
 .navbar-brand img{
   border: 2px solid black;
@@ -58,6 +58,7 @@
     font-size: 22px;
     font-weight: bold;
     cursor: pointer; 
+    position: relative;
 
     a{
     color: $primary-color;
@@ -69,6 +70,22 @@
 } 
 } 
 } 
+.nav__li a::after{
+  content: "";
+  position: absolute;
+  top: 100%;
+  left: 0%;
+  width: 100%;
+  height: 1.5px;
+  background-color: #e9893a;
+  transform: scalex(0);
+  transform-origin: right;
+  transition: transform 0.5s;  
+}
+.nav__li a:hover::after{
+  transform: scalex(1); 
+  transform-origin: left;
+}
 header div nav ul{
   margin-bottom: 0rem;
 }  
@@ -114,6 +131,7 @@ header div nav ul{
     font-size: 22px;
     font-weight: bold;
     cursor: pointer; 
+    position: relative;
 
      a{
     color: $primary-color;
@@ -125,6 +143,22 @@ header div nav ul{
 }
 } 
 } 
+.contactos-header__li a::after{
+  content: "";
+  position: absolute;
+  top: 100%;
+  left: 0%;
+  width: 100%;
+  height: 1.5px;
+  background-color: #e9893a;
+  transform: scalex(0);
+  transform-origin: right;
+  transition: transform 0.5s;  
+}
+.contactos-header__li a:hover::after{
+  transform: scalex(1); 
+  transform-origin: left;
+}
 /* .............Nosotros......... */
 
   /*header*/
@@ -153,18 +187,20 @@ header div nav ul{
   align-content: flex-end;
   text-align: left;
 
-  margin-right: 10px;
+  margin: 10px;
   width: 600px;
 }
-.nosotros-header__li{
+/*.nosotros-header__li{
     display: inline-block;
-    padding: 9px;
+    padding-right: 9px;
+    padding-left: 9px; 
     margin: 0 auto;
     width: 120px;
     box-sizing: border-box;
     font-size: 1.3em;
     font-weight: bold;
     text-align: right;
+    position: relative;
 
     a{
     color: $primary-color;
@@ -175,11 +211,45 @@ header div nav ul{
     border-radius: 0.4em; 
 }
 }
+}*/
+.nosotros-header__li{
+    margin-left: 2rem;
+    font-size: 22px;
+    font-weight: bold;
+    cursor: pointer; 
+    position: relative;
+    list-style: none;
+
+    a{
+    color: $primary-color;
+    text-decoration: none;
+    &:hover {
+    color: black;
+    background-color: #FFFFFF;
+    border-radius: 0.4em;
+}
+} 
+} 
+.nosotros-header__li a::after{
+  content: "";
+  position: absolute;
+  top: 100%;
+  left: 0%;
+  width: 100%;
+  height: 1.5px;
+  background-color: #e9893a;
+  transform: scalex(0);
+  transform-origin: right;
+  transition: transform 0.5s;  
+}
+.nosotros-header__li a:hover::after{
+  transform: scalex(1); 
+  transform-origin: left;
 } 
 /*........... Productos....... */
 .productos-header{
   background-color: $secondary-color;
-  height: 80px;
+  height: px;
   padding: 0.5rem 1rem;
   position: relative;
 
@@ -214,7 +284,8 @@ header div nav ul{
     margin-left: 2rem;
     font-size: 22px;
     font-weight: bold;
-    cursor: pointer; 
+    cursor: pointer;
+    position: relative; 
 
     a{
     color: $primary-color;
@@ -225,6 +296,22 @@ header div nav ul{
     border-radius: 0.4em;
 }
 } 
+} 
+.productos-header__li a::after{
+  content: "";
+  position: absolute;
+  top: 100%;
+  left: 0%;
+  width: 100%;
+  height: 1.5px;
+  background-color: #e9893a;
+  transform: scalex(0);
+  transform-origin: right;
+  transition: transform 0.5s;  
+}
+.productos-header__li a:hover::after{
+  transform: scalex(1); 
+  transform-origin: left;
 }   
 /* ...........Servicios....... */
 
@@ -267,6 +354,7 @@ header div nav ul{
     font-size: 22px;
     font-weight: bold;
     cursor: pointer;
+    position: relative;
 
     a{
     color: $primary-color;
@@ -278,6 +366,21 @@ header div nav ul{
 }
 }  
 } 
-
+.servicios-header__li a::after{
+  content: "";
+  position: absolute;
+  top: 100%;
+  left: 0%;
+  width: 100%;
+  height: 1.5px;
+  background-color: #e9893a;
+  transform: scalex(0);
+  transform-origin: right;
+  transition: transform 0.5s;  
+}
+.servicios-header__li a:hover::after{
+  transform: scalex(1); 
+  transform-origin: left;
+} 
 
 

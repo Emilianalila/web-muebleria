@@ -6,7 +6,7 @@
 
 /*inicio*/
     .header{
-      height: 84%;
+      /*height: 84%;*/
     }
     .header__container{
      flex-direction: row;
@@ -14,14 +14,21 @@
      .navbar {
       display: none;
      }
+     .main{
+      padding: 2.3rem;
+     }
      .main__h1{
-     font-size: 6em;
+     font-size: 5em;
      }
      .main__container{
       height: 79.9vh;
+      padding-bottom: 75px;
       }
       .footer__texto{
         font-size: 15px
+      }
+      .inicio-grid{
+        column-gap: 0.1rem;
       }
 /*nosotros*/
      .nosotros-header{
@@ -65,7 +72,7 @@
 
 /* productos */
    .productos-header{
-      height: 83%;
+      /*height: 83%;*/
     }
     .productos-header__container{
      flex-direction: row;
@@ -129,6 +136,9 @@
     .nav__lista{
       display: none;
     }
+    .main{
+      padding: 1.6rem;
+     }
     .main__titulo{
       top: 55%;
       left: 50%;
@@ -145,8 +155,46 @@
     .main__container{
       text-align: center;
     }
-    
+    .containervendidos{
+      text-align: center;
+    }
+    .bestsellers {
+    display: inline-block;
+    }
+    .vendidos{
+      margin: 10px;
+    }
+    .card-body{
+    padding: 3px;
+    line-height: 13px;
+    }
+    .inicio-grid{
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(1, 317.9px);
+    column-gap: 0.1rem;
+    row-gap: 0.1rem;
+    padding-right: 40px;
+    }
+    .inicio-grid__container img {
+     width: auto; 
+     height: auto; 
+    }
+    .inicio-grid__container{
+     height: 300px;
+    }
+    .overlay-inicio1 {
+     height: 70%;
+     }
+    .overlay-inicio2 {
+     height: 80%;
+     }
+    .overlay-inicio3 {
+     height: 80%;
+     }
 /* productos */
+    body {
+    background-image: none;
+    }
     .navbar{
       display: flex;
     }
@@ -162,16 +210,22 @@
     .productos-nav__lista{
       display: none;
     }
-    .productos-grid{
-     grid-template-columns: repeat(2, 1fr);
-     grid-template-rows: repeat(2, 309.9px);
-     }
-     .overlay__title{
-     font-size: 1rem;
-     }
-     .overlay__description{
-     left: 43%;
-     }
+    .containerproductos{
+      text-align: center;
+    }
+    .containerproductos2{
+      text-align: center;
+    }
+    .productos2 {
+    display: inline-block;
+    }
+    .productostargetas{
+     margin: 10px;
+    }
+    .card-productos{
+    padding: 3px;
+    line-height: 13px;
+    }
 /*nosotros*/
     .nosotros-header__lista{
       display: none;

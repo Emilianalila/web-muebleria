@@ -5,22 +5,22 @@
 
 .main{
   display: flex;
-    padding: 1rem;
+    padding: 0.5rem;
     position: relative;
    
 }
 .main__container{
    max-width: 1200px;
    margin: 0 auto;
-   height: 75.3vh;
+   height: 91.3vh;
    flex-direction: column;
-   
+   padding-bottom: 125px;
    @include crearflex(center, center)  
 }
 .main__h1{
     font-size: 5em;
     font-weight: normal;
-    color: #191919;
+    color: #E6E6E6;
 }
 .main__h2{
     font-size: 2em;
@@ -38,19 +38,148 @@
     box-sizing: content-box;
 }
   .main__p{
-  animation-duration: 5s;
+  animation-duration: 3.5s;
   animation-name: p;
   animation-iteration-count: infinite;
 }
 
 @keyframes p {
   0% {
-    opacity: 0.7;
+    opacity: 0.9;
+    color: black;
   }
   100% {
     opacity: 1;
+    color: white;
   }
 }
+.containervendidos{
+  position: relative;
+  border-bottom: 4px solid #e9893a; 
+  background-image: linear-gradient(to top, #f9f8f7, #f5eee8, #f1e5da, #eddbcc, #e9d1be);
+}
+.bestsellers {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    padding: 7px;
+
+}
+.textosellers{
+  font-size: 24px;
+  text-align: center;
+  padding: 2px;
+  text-decoration: underline;
+}
+.vendidos{
+   padding: 10px;
+   height: 100%;
+   border: 1px solid black;
+}
+.bestsellers-imagen{
+   width: 250px;
+   height: 250px;
+}
+.card-body{
+  line-height: 8px;
+  text-decoration: none;
+  padding: 3px;
+}
+.boton{
+  background-color: #351d15;
+  border: 1px solid black;
+  text-decoration: none;
+  border-radius: 6px;
+}
+/*.....ofertas.......*/
+.inicio-grid{
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(1, 317.9px);
+  row-gap: 4rem;
+  column-gap: 4rem;
+  width: 100%;
+  margin: 0rem auto;
+  border-bottom: 3px solid #e9893a;
+  padding: 50px;
+  justify-content: center;
+  align-content: center;
+  cursor: pointer;
+  background-image: inear-gradient(to top, #f9f8f7, #f5eee8, #f1e5da, #eddbcc, #e9d1be);
+}  
+.inicio-grid__container img{
+  width: 80%;
+  height: 100%;
+}
+
+/* animacion */
+/*.....imagen... 1 */
+.overlay-inicio1{
+  background-image: url("../assets/images/ofertas2.png");
+  background-position: center;
+   background-size: cover;
+  height: 101%;
+  opacity: 0;
+  z-index: 1;
+  overflow: hidden;
+  transform: translate(0%, -100%);
+  transition: 0.5s ease;
+  position: relative;
+}
+.inicio-grid__container:hover .overlay-inicio1{
+  opacity: 1;
+}
+.inicio-overlay__title1{
+font-size: 25px;
+text-align: center;
+margin-top: 130px;
+color: black;
+}
+/*.....imagen... 2 */
+.overlay-inicio2{
+  background-image: url("https://wallpaperaccess.com/full/2076086.jpg");
+  background-position: center;
+   background-size: cover;
+  height: 101%;
+  opacity: 0;
+  z-index: 1;
+  overflow: hidden;
+  transform: translate(0%, -100%);
+  transition: 0.5s ease;
+  position: relative;
+}
+.inicio-grid__container:hover .overlay-inicio2{
+  opacity: 1;
+}
+.inicio-overlay__title2{
+font-size: 25px;
+text-align: center;
+margin-top: 160px;
+color: black;
+}
+/*.....imagen... 3*/
+.overlay-inicio3{
+  background-image: url("../assets/images/ofertas4.png");
+  background-position: center;
+   background-size: cover;
+  height: 101%;
+  opacity: 0;
+  z-index: 1;
+  overflow: hidden;
+  transform: translate(0%, -100%);
+  transition: 0.5s ease;
+  position: relative;
+}
+.inicio-grid__container:hover .overlay-inicio3{
+  opacity: 1;
+}
+.inicio-overlay__title3{
+font-size: 25px;
+text-align: center;
+margin-top: 160px;
+color: white;
+}
+
 
 
 /*............... Contactos........... */
@@ -86,11 +215,16 @@
 .contacto-main{
    line-height: 25px;
    font-size: 25px;
-   font-weight: bold;
+   font-weight: normal;
    padding: 19.5px;
    text-align: center;
    border: 1.5px solid black;   
    margin: auto;
+   color: white;
+
+  background-image: url("https://wallpaperaccess.com/full/2076086.jpg");
+  background-position: center;
+  background-size: cover;
 }
 .white:hover{
       color: black;
@@ -155,6 +289,13 @@ form label{
   
   @include crearflex(center, center)
 }
+.col-12fondo{
+  background-image: url("https://wallpaperaccess.com/full/2076086.jpg");
+  background-position: center;
+  background-size: cover;
+  /*background-image: linear-gradient(to bottom, #fbfaf4, #faf9f3, #f8f9f1, #f7f8f0, #f5f8ef, #ecf3e4, #e3edd9, #d9e8ce, #c6dcb7, #b3d09f, #a0c489, #8db872);*/
+}
+
 .empleado{
    padding: 10px;
    margin-top: 50px;
@@ -188,54 +329,75 @@ form label{
  
      
 /*............... Productos.......... */
-     /* main*/    
-.productos-grid{
-  display: grid;
-  grid-template-columns: repeat(6, 1fr);
-  grid-template-rows: repeat(2, 309.9px);
-  row-gap: 0.1rem;
-  column-gap: 0.1rem;
-  width: 100%;
-  margin: 0rem auto;
-  border: 3.5px solid #108040;
-  background-color: gray;
-  cursor: pointer;
-} 
-.grid__container__img{
-  width: 100%;
-  height: 100%;
+     /* main*/ 
+
+.containerproductos{
+  border-bottom: 3px solid #e9893a; 
+  background-image: linear-gradient(to bottom, #f9f8f7, #f5eee8, #f1e5da, #eddbcc, #e9d1be);
 }
-.overlay{
-  background-image: url('https://revistamuebles.com/wp-content/2016/05/muebles-blancos.jpg');
-  height: 102%;
-  opacity: 0;
-  z-index: 1;
-  transform: translate(0%, -100%);
-  transition: 0.5s ease;
+.containerproductos a{
+  text-decoration: none;
   position: relative;
 }
-.grid__container:hover .overlay{
-  opacity: 1;
+.containerproductos2{
+  border-bottom: 3px solid #e9893a; 
+  background-image: linear-gradient(to top, #f9f8f7, #f5eee8, #f1e5da, #eddbcc, #e9d1be);
 }
-.overlay__title{
-  color: black;
-  font-size: 1.4rem;
+.productos2 {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    padding: 7px;
+}
+.textoproductos{
+  font-size: 24px;
   text-align: center;
-  position: absolute;
-  top: 45%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-}
-.overlay__description{
+  padding: 2px;
+  text-decoration: underline;
   color: black;
+  padding-top: 15px;
+}
+/*....no funciona....*/
+.relative{
+  position: relative;
+ }
+ div a::after{
+  content: "";
+  position: absolute;
+  top: 100%;
+  left: 0%;
+  width: 100%;
+  height: 3px;
+  background-color: #e9893a;
+  transform: scalex(0);
+  transform-origin: right;
+  transition: transform 0.5s;  
+}
+div a :hover ::after {
+  transform: scalex(1); 
+  transform-origin: left;
+}
+.productostargetas{
+   padding: 10px;
+   height: 100%;
+   border: 1px solid black;
+}
+.producto-imagen{
+   width: 250px;
+   height: 250px;
+}
+.card-productos{
+  line-height: 8px;
+  text-decoration: none;
+  padding: 3px;
+}
+.boton-comprar{
+  background-color: #351d15;
   border: 1px solid black;
-  font-size: 0.9rem;
-  text-align: center;
-  position: absolute;
-  top: 55%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-}
+  text-decoration: none;
+  border-radius: 6px;
+}   
+
 
     
 /* ..............Servicios............ */
@@ -250,6 +412,8 @@ form label{
   margin: 0rem auto;
   border: 2.5px solid white;
   cursor: pointer;
+  background-image: linear-gradient(to bottom, #f9f8f7, #f5eee8, #f1e5da, #eddbcc, #e9d1be);
+  /*background-image: linear-gradient(#FF8964, #FFD993, #FFEECA);*/
 } 
 .servicios-grid__container img{
   width: 100%;
@@ -310,5 +474,58 @@ margin-top: 200px;
   text-decoration-style: wavy;
   text-decoration-color: #108040;
 }
+
+.containerservicios{
+  border-bottom: 3px solid #e9893a; 
+  background-image: linear-gradient(to bottom, #f9f8f7, #f5eee8, #f1e5da, #eddbcc, #e9d1be);
+}
+.containerproductos a{
+  text-decoration: none;
+  position: relative;
+}
+.servicios2 {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    padding: 7px;
+}
+.textoservicios{
+  font-size: 24px;
+  text-align: center;
+  padding: 2px;
+  text-decoration: underline;
+  color: black;
+  padding-top: 15px;
+}
+.serviciostargetas{
+   padding: 10px;
+   height: 100%;
+   border: 1px solid black;
+}
+.servicio-imagen{
+   width: 250px;
+   height: 250px;
+}
+.card-productos{
+  line-height: 8px;
+  text-decoration: none;
+  padding: 3px;
+}
+.boton-comprar{
+  background-color: #351d15;
+  border: 1px solid black;
+  text-decoration: none;
+  border-radius: 6px;
+}   
+
+
+
+
+
+
+
+
+
+
 
     

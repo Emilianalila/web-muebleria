@@ -7,7 +7,6 @@
   display: flex;
     padding: 0.5rem;
     position: relative;
-   
 }
 .main__container{
    max-width: 1200px;
@@ -25,6 +24,7 @@
 .main__h2{
     font-size: 2em;
     color: #191919;
+    font-family: raleway;
 } 
 .main__p{
     font-size: 1.5em;
@@ -36,6 +36,7 @@
     padding: 8px 8px;
     margin: 5px;
     box-sizing: content-box;
+
 }
   .main__p{
   animation-duration: 3.5s;
@@ -55,7 +56,7 @@
 }
 .containervendidos{
   position: relative;
-  border-bottom: 4px solid #e9893a; 
+  border-bottom: 2px solid #b89c75; 
   background-image: linear-gradient(to top, #f9f8f7, #f5eee8, #f1e5da, #eddbcc, #e9d1be);
 }
 .bestsellers {
@@ -66,10 +67,11 @@
 
 }
 .textosellers{
-  font-size: 24px;
+  font-size: 26px;
   text-align: center;
-  padding: 2px;
-  text-decoration: underline;
+  font-family: raleway;
+  padding: 4px;
+  text-decoration: underline #b89c75;
 }
 .vendidos{
    padding: 10px;
@@ -105,17 +107,17 @@
   justify-content: center;
   align-content: center;
   cursor: pointer;
-  background-image: inear-gradient(to top, #f9f8f7, #f5eee8, #f1e5da, #eddbcc, #e9d1be);
+  
 }  
 .inicio-grid__container img{
-  width: 80%;
+  width: 75%;
   height: 100%;
 }
 
 /* animacion */
 /*.....imagen... 1 */
 .overlay-inicio1{
-  background-image: url("../assets/images/ofertas2.png");
+  background-image: url("../assets/images/ofertas2-2.png");
   background-position: center;
    background-size: cover;
   height: 101%;
@@ -126,14 +128,17 @@
   transition: 0.5s ease;
   position: relative;
 }
+.overlay-inicio1  a{
+  text-decoration: none;
+}
 .inicio-grid__container:hover .overlay-inicio1{
   opacity: 1;
 }
 .inicio-overlay__title1{
 font-size: 25px;
 text-align: center;
-margin-top: 130px;
-color: black;
+margin-top: 160px;
+color: white;
 }
 /*.....imagen... 2 */
 .overlay-inicio2{
@@ -151,11 +156,11 @@ color: black;
 .inicio-grid__container:hover .overlay-inicio2{
   opacity: 1;
 }
-.inicio-overlay__title2{
-font-size: 25px;
-text-align: center;
-margin-top: 160px;
-color: black;
+.inicio-overlay__title2 {
+    font-size: 29px;
+    text-align: center;
+    margin-top: 94px;
+    color: #f9f8f7;
 }
 /*.....imagen... 3*/
 .overlay-inicio3{
@@ -170,6 +175,9 @@ color: black;
   transition: 0.5s ease;
   position: relative;
 }
+.overlay-inicio3  a{
+  text-decoration: none;
+}
 .inicio-grid__container:hover .overlay-inicio3{
   opacity: 1;
 }
@@ -180,14 +188,12 @@ margin-top: 160px;
 color: white;
 }
 
-
-
 /*............... Contactos........... */
      /* main*/
 .contactos-grid{
   display: grid;
   grid-template-columns: repeat(2, 1fr);
-  grid-template-rows: repeat(1, 617.9px);
+  grid-template-rows: repeat(1, 633.9px);
   row-gap: 0.3rem;
   column-gap: 0.3rem;
   width: 100%;
@@ -199,7 +205,8 @@ color: white;
 } 
 .contactos-grid__container img{
   width: 100%;
-  height: 620px;
+  height: 633.9px;
+  border: 1.5px solid black;
 
 }
 #carouselExampleControls{
@@ -216,13 +223,13 @@ color: white;
    line-height: 25px;
    font-size: 25px;
    font-weight: normal;
-   padding: 19.5px;
+   padding: 15.5px;
    text-align: center;
    border: 1.5px solid black;   
    margin: auto;
-   color: white;
+   color: #0b0b0c;
 
-  background-image: url("https://wallpaperaccess.com/full/2076086.jpg");
+  background-image: linear-gradient(to top, #f9f8f7, #f5eee8, #f1e5da, #eddbcc, #e9d1be);
   background-position: center;
   background-size: cover;
 }
@@ -231,6 +238,12 @@ color: white;
       background-color: #FFFFFF;
       border-radius: 0.4em;
       width: 640px;
+}
+.colorverde{
+  color: #e9893a;
+  font-family: raleway;
+  font-size: 38px;
+  text-decoration: underline 1.4px #e9893a;
 }
 .contacto__texto a{
   color: black;
@@ -278,11 +291,28 @@ form label{
    line-height: 20px;
    font-size: 17px;
 }
+.mapa{
+   text-align: center;
+   padding-bottom:70px;
+   padding-top: 70px;
+   border-bottom: 2px solid #e9893a;
+   
+}
+.mapa2{
+   height: 400px;
+   background-size: cover;
+   border-radius: 38px;
+   border: 1px solid #e9893a;
+}
+  
+
      
 
 /* ................Nosotros............ */
   /* main*/
-
+.nosotros-main__container{
+  border: 4px solid white;
+}
 .nosotros-grid__items{
   flex-direction: column;
   padding: 5px;
@@ -290,15 +320,19 @@ form label{
   @include crearflex(center, center)
 }
 .col-12fondo{
-  background-image: url("https://wallpaperaccess.com/full/2076086.jpg");
+  background-image: linear-gradient(to top, #f9f8f7, #f5eee8, #f1e5da, #eddbcc, #e9d1be);
   background-position: center;
   background-size: cover;
-  /*background-image: linear-gradient(to bottom, #fbfaf4, #faf9f3, #f8f9f1, #f7f8f0, #f5f8ef, #ecf3e4, #e3edd9, #d9e8ce, #c6dcb7, #b3d09f, #a0c489, #8db872);*/
+  border: 1px solid black;
+
+}
+.row {
+   --bs-gutter-x: 0rem;
 }
 
 .empleado{
    padding: 10px;
-   margin-top: 50px;
+   margin-top: 10px;
    height: 100%;
 }
 .empleado-imagen{
@@ -306,26 +340,67 @@ form label{
    height: 100px;
 }
 .btn {
-  background-color: #095D15;
+  background-color: #e9893a;
+}
+.btn-secondary:hover {
+  background-color: #198754;
+    
+}
+.nombre{
+  font-family: raleway;
 }
 .nosotros__h2{
-  font-size: 40px;
+  font-size: 45px;
   margin-left: 10px;
-  margin-top: 5px;
-  padding-top: 5px;
-
+  padding-top: 15px;
+  text-decoration: underline 1.4px #e9893a;
+  font-family: raleway;
 }
 .nosotros__parrafo{
   text-align:center; 
-  margin-left: 10px;
+  margin-left: 5px;
+  font-size: 25px;
+  padding: 10px 27px 0px;
 }
-.nosotros-grid__items video{
-  width: 650px;
-  height: 619px;
-  object-fit: cover;
-  object-position: top;
-  padding: 10px;
+.nosotros-grid__items1{
+  flex-direction: column;
+  padding: 2px;
+  border: 1px solid black;
+  
+  @include crearflex(center, center)
 }
+.nosotros-grid__items1 video{
+  width: 100%;
+  height: 100%;
+  
+}
+.nosotrosfinal{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  padding: 30px;
+  border-bottom: 2px solid #e9893a;
+}
+.card-info {
+    display: flex;
+    flex-direction: column;
+    background-color: #E6E6E6;
+    width: 25%;
+}
+.card__title{
+  text-align: center;
+  padding-top: 2.5rem;
+}
+.card__body1{
+  width: 100%;
+  font-size: 19px;
+  padding: 10px 10px 0px;
+  padding-left: 15px;
+  text-align: center;
+  line-height: 2rem;
+  margin-bottom: 0px;
+}
+
  
      
 /*............... Productos.......... */
@@ -350,33 +425,15 @@ form label{
     padding: 7px;
 }
 .textoproductos{
-  font-size: 24px;
+  font-size: 25px;
   text-align: center;
   padding: 2px;
   text-decoration: underline;
   color: black;
   padding-top: 15px;
+  font-family: raleway;
 }
-/*....no funciona....*/
-.relative{
-  position: relative;
- }
- div a::after{
-  content: "";
-  position: absolute;
-  top: 100%;
-  left: 0%;
-  width: 100%;
-  height: 3px;
-  background-color: #e9893a;
-  transform: scalex(0);
-  transform-origin: right;
-  transition: transform 0.5s;  
-}
-div a :hover ::after {
-  transform: scalex(1); 
-  transform-origin: left;
-}
+
 .productostargetas{
    padding: 10px;
    height: 100%;
@@ -396,127 +453,150 @@ div a :hover ::after {
   border: 1px solid black;
   text-decoration: none;
   border-radius: 6px;
-}   
+} 
+.btn-primary:hover{
+  background-color: #198754;
+} 
 
 
     
 /* ..............Servicios............ */
-     /* main*/
+      /*.....main.....*/
+.fondo{
+  background-color: white;
+  background-image: none;
+}
 .servicios-grid{
   display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  grid-template-rows: repeat(1, 617.9px);
-  row-gap: 0.3rem;
-  column-gap: 0.3rem;
-  width: 100%;
-  margin: 0rem auto;
-  border: 2.5px solid white;
-  cursor: pointer;
-  background-image: linear-gradient(to bottom, #f9f8f7, #f5eee8, #f1e5da, #eddbcc, #e9d1be);
-  /*background-image: linear-gradient(#FF8964, #FFD993, #FFEECA);*/
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  grid-gap: 1.5rem;
+  width: auto;
+  margin: 2rem;
+  cursor: pointer; 
 } 
 .servicios-grid__container img{
   width: 100%;
   height: 100%;
 }
-/* animacion */
-.overlay-servicios{
-  background-image: url("https://wallpaperaccess.com/full/2076086.jpg");
-  background-position: center;
-   background-size: cover;
-  height: 101%;
-  opacity: 0;
-  z-index: 1;
-  overflow: hidden;
-  transform: translate(0%, -100%);
-  transition: 0.5s ease;
-  position: relative;
-}
-.servicios-grid__container:hover .overlay-servicios{
-  opacity: 1;
-}
-.servicios-overlay__title{
-font-size: 25px;
-text-align: center;
-margin-top: 200px;
-}
-
-.servicios-grid__container li{
-  list-style: none;
-}
-.servicios__texto{
+.servicios-grid__container1{
+  background-image: linear-gradient(to bottom, #f9f8f7, #f5eee8, #f1e5da, #eddbcc, #e9d1be);
   text-align: center;
   height: auto;
-  padding: 40px;
+  font-size: 29px;
+  padding: 50px;
+  line-height: 2rem;
+  border: 0.2px solid black; 
 }
-.servicios__h2{
-  font-size: 45px;
-  margin-bottom: 2px;
+.botton{
+  margin-bottom: 0rem;
 }
-.servicios__p{
-  font-size: 25px;
-  height: auto;
-  padding: 2px;
-  text-decoration: none;
-  margin-bottom: 0px;
+
+.servicios-grid__container2{
+  position: relative;
+  background-image: url("https://wallpaperaccess.com/full/2076086.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  background-attachment: scroll;
+}
+.servicios-grid__container2 a{
+  position: absolute;
+  top: 145px;
+  right: 29%;
+  color: white;
+  font-size: 49px;
+}
+.servicios-grid__container2 img{
+  width: 100%;
+  height: 100%;
+}
+#textoservicios{
+  font-size: 4rem;
+  font-family: raleway;
+  position: absolute;
+  top: 120px;
+  right: 29%;
+  color: white;
+  text-decoration: underline white;
+}
+
+
+body[data-aos-duration="400"] [data-aos] {
+    transition-duration: .9s;
+
+}
+.servicios-grid__container6{
+  text-align: center;
+  padding: 39px 30px 0px;
+  color: black;
+  font-size: 23px;
+  line-height: 2rem;
+  border: 0.2px solid black; 
+  background-image: linear-gradient(to top, #f9f8f7, #f5eee8, #f1e5da, #eddbcc, #e9d1be);
+}
+.servicios-grid__container6 a{
+  color: #ef705c;
+}
+.servicios-grid__container video{
+  width: 100%;
+  height: 100%;
+  object-fit: fill;
+  border: 0.2px solid black; 
+}
+.servicios-grid__container8{
+  text-align: center;
+  color: black;
+  position: relative;
+  border: 0.2px solid black;
   
 }
-.subtitulo{
-  font-size: 30px;
-  text-decoration: underline;
-  text-decoration-style: wavy;
-  text-decoration-color: #108040;
-
+.titulo8{
+  position: absolute;
+  border: 2px solid black;
+  top: 55px;
+  right: 20%;
+  padding: 5px;
+  font-family: raleway; 
 }
-.subtitulo2{
-  font-size: 30px;
-  text-decoration: underline;
-  text-decoration-style: wavy;
-  text-decoration-color: #108040;
+.titulo8 i{
+  color: #ef705c;
 }
-
-.containerservicios{
-  border-bottom: 3px solid #e9893a; 
-  background-image: linear-gradient(to bottom, #f9f8f7, #f5eee8, #f1e5da, #eddbcc, #e9d1be);
-}
-.containerproductos a{
-  text-decoration: none;
-  position: relative;
-}
-.servicios2 {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-evenly;
-    padding: 7px;
-}
-.textoservicios{
-  font-size: 24px;
+.titulo82{
+  position: absolute;
+  top: 340px;
+  padding: 10px;
   text-align: center;
-  padding: 2px;
-  text-decoration: underline;
-  color: black;
-  padding-top: 15px;
+  font-size: 18px;
 }
-.serviciostargetas{
-   padding: 10px;
-   height: 100%;
-   border: 1px solid black;
+.servicios-grid__container9{
+  position: relative;
+  text-align: center;
+  padding: 5px;
+  border: 0.2px solid black; 
+  background-image: linear-gradient(to top, #f9f8f7, #f5eee8, #f1e5da, #eddbcc, #e9d1be);
 }
-.servicio-imagen{
-   width: 250px;
-   height: 250px;
+.titulo9{
+  position: absolute;
+  border: 2px solid black;
+  top: 55px;
+  right: 12%;
+  padding: 5px; 
+  font-family: raleway;
 }
-.card-productos{
-  line-height: 8px;
-  text-decoration: none;
-  padding: 3px;
+.titulo9 i{
+  color: #ef705c;
 }
-.boton-comprar{
-  background-color: #351d15;
-  border: 1px solid black;
-  text-decoration: none;
-  border-radius: 6px;
-}   
+.titulo91{
+  text-align: center;
+  padding: 30px;
+  padding-top: 115px;
+  margin-bottom: 0rem;
+  font-size: 24px;
+}
+
+
+
 
 
 

@@ -63,7 +63,7 @@
     font-size: 46px;    
 }
 .contactos-footer__targetas a{
-    color: $primary-color;
+    color: #e9893a;
 }
 .footer__sombra:hover {
   color: black;
@@ -91,7 +91,7 @@
     font-size: 46px;    
 }
 .nosotros-footer__targetas a{
-    color: $primary-color;
+    color: #e9893a;
 }
 .footer__sombra:hover {
   color: black;
@@ -140,6 +140,7 @@
     height: 86px;
     padding: 0.8rem;
     position: relative;
+    border-top: 2px solid #e9893a;
 }
 .servicio-footer__container{
     max-width: 1200px;
@@ -148,7 +149,6 @@
     flex-direction: column;
     
     @include crearflex(center, center)
-
 }
 .servicio-footer__texto{
     color: black;
@@ -161,7 +161,7 @@
     font-size: 46px;    
 }
 .servicio-footer__targetas a{
-    color: $primary-color;
+    color: #e9893a;
 }
 .footer__sombra:hover {
   color: black;

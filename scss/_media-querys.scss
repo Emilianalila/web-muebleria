@@ -5,9 +5,6 @@
 @media screen and (max-width: 1024px){
 
 /*inicio*/
-    .header{
-      /*height: 84%;*/
-    }
     .header__container{
      flex-direction: row;
      }
@@ -15,7 +12,7 @@
       display: none;
      }
      .main{
-      padding: 2.3rem;
+     padding: 2.3rem;
      }
      .main__h1{
      font-size: 5em;
@@ -23,13 +20,19 @@
      .main__container{
       height: 79.9vh;
       padding-bottom: 75px;
-      }
+     }
       .footer__texto{
-        font-size: 15px
-      }
+      font-size: 15px
+     }
       .inicio-grid{
-        column-gap: 0.1rem;
-      }
+      column-gap: 0.1rem;
+      padding: 10px;
+      padding-left: 30px;
+     }
+      .inicio-grid__container img {
+       width: 100%;
+       height: 100%;
+     }
 /*nosotros*/
      .nosotros-header{
       height: 90px;
@@ -51,13 +54,15 @@
     .nosotros--texto{
       font-size: 18px;
     }
-    
-     .nosotros__h2{
+    .nosotros__h2{
       margin-left: 0px;
     }
     .nosotros__parrafo{
       margin-left: 0px;
       font-size: 23px;
+    }
+    .col-md-6{
+        min-width: 100%;
     }
     .col-12{
       width: 100%;
@@ -68,13 +73,21 @@
     }
     .nosotros-footer__texto{
     font-size: 15px
-      }
+    }
+    .card__title {
+    text-align: center;
+    padding: 10px 10px 0px;
+    padding-top: 30px;
+    font-size: 22px;
+    margin-bottom: 0px;
+    }
+    .card__body1 {
+    font-size: 19.5px;
+    line-height: 1.5rem;
+}
 
 /* productos */
-   .productos-header{
-      /*height: 83%;*/
-    }
-    .productos-header__container{
+   .productos-header__container{
      flex-direction: row;
     }
     .productos-grid{
@@ -82,20 +95,39 @@
      grid-template-rows: repeat(2, 309.9px);
      }
     .producto-footer__texto{
-    font-size: 15px
-      }
+     font-size: 15px
+    }
+    .card-productos {
+     line-height: 15px;
+     font-size: 18px; 
+    }
 /* servicios*/
     .servicios-grid{
-     grid-template-columns: 1fr;
-     grid-template-rows: repeat(1, 617.9px);
-    }
-    .servicios__texto{
-     margin-top: 20px;
-     margin: 30px;
+     grid-template-columns: repeat(2,1fr);
+     grid-template-rows: repeat(2, 1fr);
     }
     .servicio-footer__texto{
-    font-size: 15px
-      }
+     font-size: 15px
+    }
+    #textoservicios {
+    top: 130px;
+    right: 24%;
+    font-size: 5rem;
+    }
+    .servicios-grid__container2 a {
+    top: 155px;
+    }
+    .servicios-grid__container1 {
+     font-size: 32px;
+     padding: 50px;
+    }
+    .servicios-grid__container6 {
+     font-size: 28px;
+    }
+    .titulo82 {
+    top: 350px;
+    font-size: 19px;
+    }
 /* contactos*/
     .contactos-grid{
     grid-template-columns: 1fr;
@@ -107,16 +139,67 @@
     .contacto-main{
     line-height: 35px;
     font-size: 27px;
-   }
+    }
    .contactos-footer__texto{
     font-size: 15px
-      }
+    }
 }
-
-
-
-
-
+        /* tablet */
+@media screen and (max-width: 768px){
+  #textoservicios {
+    top: 100px;
+    right: 23%;
+    font-size: 4rem;
+    }
+    .servicios-grid__container2 a {
+    top: 100px;
+    font-size: 43px;
+    }
+    .servicios-grid__container1 {
+     font-size: 22px;
+     padding: 33px;
+    }
+    .servicios-grid__container9 {
+    padding: 5px;
+    }
+    .titulo9 {
+    top: 46px;
+    right: 7%;
+    padding: 5px;
+    }
+    .titulo91 {
+    padding: 5px;
+    padding-top: 89px;
+    font-size: 20px;
+    }
+    .servicios-grid__container6 {
+    padding: 35px 20px 0px;
+    font-size: 19px;
+    line-height: 1.5rem;
+    }
+    .titulo8 {
+    top: 40px;
+    right: 13%;
+    }
+    .titulo82 {
+    top: 250px;
+    font-size: 16px;
+    }
+    /*nosotros*/
+    .nosotrosfinal {
+    flex-direction: column;
+    }
+    .card-info {
+    width: 100%;
+    }
+    .aspect-ratio-image__image{
+      padding-left: 50px;
+    }
+    .card__body1 {
+    font-size: 12.5px;
+    line-height: 1.1rem;
+    }    
+}
         /* movil */
 @media screen and (max-width: 600px) {
 
@@ -137,7 +220,7 @@
       display: none;
     }
     .main{
-      padding: 1.6rem;
+      padding: 1.6rem 1.6rem 0.5rem;
      }
     .main__titulo{
       top: 55%;
@@ -148,6 +231,7 @@
     }
     .main__h2{
       font-size: 1.5em;
+      color: #e9893a;
     }
     .main__p{
       font-size: 1.4em;
@@ -174,27 +258,34 @@
     column-gap: 0.1rem;
     row-gap: 0.1rem;
     padding-right: 40px;
+    padding: 50px;
     }
     .inicio-grid__container img {
      width: auto; 
      height: auto; 
     }
     .inicio-grid__container{
-     height: 300px;
+     height: 320px;
     }
     .overlay-inicio1 {
-     height: 70%;
+     height: 95%;
      }
     .overlay-inicio2 {
      height: 80%;
      }
     .overlay-inicio3 {
-     height: 80%;
+     height: 100%;
      }
+     .bodyinicio {
+     background-position: right;
+     }
+     .inicio-overlay__title2 {
+     font-size: 27px;
+     margin-top: 80px;
+     color: #f9f8f7;
+     }
+     
 /* productos */
-    body {
-    background-image: none;
-    }
     .navbar{
       display: flex;
     }
@@ -226,8 +317,16 @@
     padding: 3px;
     line-height: 13px;
     }
+    .card-text{
+     margin-left: 0px;
+     margin-bottom: 14px;
+     font-size: 16px;
+     }
 /*nosotros*/
-    .nosotros-header__lista{
+    .nosotros-nav__lista{
+      display: none;
+    }
+    .header-nosotros__logo{
       display: none;
     }
     .nosotros-header__container{
@@ -252,11 +351,18 @@
       font-size: 15px;
     }
     .nosotros__parrafo{
-      width: 216px;
-      font-size: 19px;
+      font-size: 20px;
     }
-
-
+    .nosotrosfinal {
+    flex-direction: column;
+    }
+    .card-info {
+    width: 100%;
+    }
+    .aspect-ratio-image__image{
+      padding-left: 0px;
+    }
+    
 /* servicios*/
     /* header*/
     .servicios-header {
@@ -300,6 +406,53 @@
       margin-bottom: 10px;
       font-size: 18px;
     }
+    .servicios-grid{
+     grid-template-columns: 1fr;
+     grid-template-rows: 1fr;
+    }
+    .servicios-grid {
+     grid-gap: 0.5rem;
+     width: auto;
+     margin: 0.3rem;
+    }
+    .servicios-grid__container1 {
+     font-size: 24px;
+     padding: 35.9px;
+    }
+     .servicios-grid__container9 {
+     padding: 10px 10px 0px; 
+     }
+     .titulo9 {
+     right: 15%;
+     top: 45px;
+     }
+     .titulo91 {
+     padding: 5px 5px 0px;
+     padding-top: 80px;
+     }
+     .servicios-grid__container6 {
+     padding: 21px 15px 0px;
+     font-size: 20px;
+     line-height: 1.8rem;
+     }
+     #textoservicios {
+     top: 79px;
+     font-size: 4rem;
+     right: 25%;
+     }
+     .titulo8 {
+     top: 50px;
+     right: 18%;
+     }
+     .titulo82 {
+      top: 305px;
+      padding: 0px; 
+     }
+     .servicios-grid__container2 a {
+     top: 85px;
+     right: 29%;
+     font-size: 30px;
+     }
 
 /* contactos*/
     .contactos-nav__lista{
@@ -331,28 +484,46 @@
     .white:hover{
       width: 260px;
     }
+    .contactos-grid__container img {
+    height: auto;
     }
+    .contactos-grid__container img {
+    height: 433.9px;
+    }
+    .contactos-grid {
+    grid-template-rows: repeat(1, 624.9px);
+    }
+}
 
 @media screen and (max-width: 320px){
+/*  inicio */
+    .overlay-inicio1 {
+    height: 75%;
+    }
 /* contactos*/
     .contacto-main{
-      font-size: 18px;
-      padding: 2px;
-      padding-top: 30px;
-
+    font-size: 18px;
+    padding: 2px;
+    padding-top: 30px;
     }
     ol, ul {
     padding-left: 0rem; 
-}
+    }
     .contacto__textarea{
-      width: 237px;
+    width: 237px;
     }
     .contacto__input {
     display: inline-block;
     width: 170px;
     height: 29px;
     margin-top: 10px;
-}
+    }
+    .contactos-grid {
+     grid-template-rows: repeat(1, 634.9px);
+    }
+    .inicio-overlay__title1 {
+    margin-top: 120px;
+    }
 /*nosotros*/
     .nosotros-grid__items video{
       width: 320px;
@@ -376,5 +547,54 @@
       margin-bottom: 10px;
       font-size: 17px;
     }
+    .servicios-grid__container1 {
+     padding: 19.3px;
+     font-size: 21px;
+     }
+     .servicios-grid__container2 a {
+     font-size: 22px;
+     top: 78px;
+     right: 29%;
+     }
+     #textoservicios {
+     top: 50px;
+     right: 20%;
+     }
+    .titulo9 {
+     right: 9%;
+     top: 30px;
+     }
+     .titulo91 {
+     padding: 5px;
+     padding-top: 80px;
+     font-size: 17px;
+     }
+     .titulo8 {
+     top: 23px;
+     right: 12%;
+    }
+    .titulo82 {
+     top: 220px;
+     padding: 10px;
+    }
+    .servicios-grid__container9 {
+     padding: 0px; 
+    }
+    .servicios-grid__container6 {
+     padding: 15px 15px 0px;
+     padding-top: 25px;
+     font-size: 18px;
+     line-height: 1.3rem;
+     }
+    .servicios-grid__container{
+      height: 280px;
+    }
+     /*productos*/
+     .card-text{
+     margin-left: 0px;
+     margin-bottom: 14px;
+     font-size: 16px;
+     }
+
 
 }

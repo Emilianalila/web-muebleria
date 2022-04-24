@@ -175,7 +175,7 @@
     .titulo91 {
     padding: 5px;
     padding-top: 89px;
-    font-size: 20px;
+    font-size: 15px;
     }
     .servicios-grid__container6 {
     padding: 35px 20px 0px;
@@ -302,6 +302,9 @@
      font-size: 27px;
      margin-top: 80px;
      color: #f9f8f7;
+     }
+     .textosellers {
+     font-size: 22px;
      }
      
 /* productos */
@@ -518,6 +521,55 @@
     .main__container {
     padding-bottom: 110px;
     }
+    .contacto__textarea {
+    margin-left: 10px;
+    }
+}
+@media screen and (max-width: 358px){
+    .servicios-grid__container1 {
+     font-size: 24px;
+     padding: 21.9px;
+    }
+     .servicios-grid__container9 {
+     padding: 10px 10px 0px; 
+     }
+     .titulo9 {
+     right: 12%;
+     top: 40px;
+     }
+     .titulo91 {
+     padding: 5px 5px 0px;
+     padding-top: 80px;
+     }
+     .servicios-grid__container6 {
+     padding: 16px 15px 0px;
+     font-size: 18px;
+     line-height: 1.8rem;
+     }
+     #textoservicios {
+     top: 79px;
+     font-size: 4rem;
+     right: 25%;
+     }
+     .titulo8 {
+     top: 25px;
+     right: 14%;
+     }
+     .titulo82 {
+      top: 255px;
+      padding: 0px; 
+     }
+     .titulo82 {
+      font-size: 15.5px;
+     }
+     .servicios-grid__container2 a {
+     top: 135px;
+     right: 29%;
+     font-size: 30px;
+     }
+     .servicios-grid__container2{
+        height: 335px;
+     }
 }
 
 @media screen and (max-width: 320px){
@@ -560,6 +612,9 @@
     }
     .inicio-overlay__title1 {
     margin-top: 120px;
+    }
+    .textosellers {
+    font-size: 23px;
     }
 /*nosotros*/
     .nosotros-grid__items video{

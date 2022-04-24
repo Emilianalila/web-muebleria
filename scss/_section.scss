@@ -7,13 +7,18 @@
   display: flex;
     padding: 0.5rem;
     position: relative;
+    background-image: url(https://wallpaperaccess.com/full/2076086.jpg);
+    background-repeat: no-repeat;
+    background-position: right;
+    background-size: cover;
+    background-attachment: scroll;
 }
 .main__container{
    max-width: 1200px;
    margin: 0 auto;
    height: 91.3vh;
    flex-direction: column;
-   padding-bottom: 125px;
+   padding-bottom: 175px;
    @include crearflex(center, center)  
 }
 .main__h1{
@@ -23,7 +28,7 @@
 }
 .main__h2{
     font-size: 2em;
-    color: #191919;
+    color: #e9893a;
     font-family: raleway;
 } 
 .main__p{
@@ -70,7 +75,7 @@
   font-size: 26px;
   text-align: center;
   font-family: raleway;
-  padding: 4px;
+  padding: 8px 8px 0px;
   text-decoration: underline #b89c75;
 }
 .vendidos{
@@ -593,6 +598,10 @@ body[data-aos-duration="400"] [data-aos] {
   padding-top: 115px;
   margin-bottom: 0rem;
   font-size: 24px;
+}
+.titulo91 img{ 
+  width: 100%; 
+  height: auto;
 }
 
 

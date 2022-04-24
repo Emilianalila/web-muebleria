@@ -17,22 +17,28 @@
      .main__h1{
      font-size: 5em;
      }
-     .main__container{
-      height: 79.9vh;
-      padding-bottom: 75px;
-     }
-      .footer__texto{
+     .main__h2 {
+     font-size: 40px;
+     color: #e9893a;
+    }
+    .main__p {
+    font-size: 2em;
+    }
+    .main__container{
+    padding-bottom: 300px;
+    }
+    .footer__texto{
       font-size: 15px
-     }
-      .inicio-grid{
+    }
+    .inicio-grid{
       column-gap: 0.1rem;
       padding: 10px;
       padding-left: 30px;
-     }
-      .inicio-grid__container img {
+    }
+    .inicio-grid__container img {
        width: 100%;
        height: 100%;
-     }
+    }
 /*nosotros*/
      .nosotros-header{
       height: 90px;
@@ -129,18 +135,17 @@
     font-size: 19px;
     }
 /* contactos*/
+    .contactos-grid__container img{
+    height: 750px;
+    }
     .contactos-grid{
     grid-template-columns: 1fr;
-    grid-template-rows: repeat(1, 724.9px);
+    grid-template-rows: repeat(1,  639.9px);
     }
-    .contactos-grid__container img{
-    height: 100vh;
+    .colorverde {
+    font-size: 45px;
     }
-    .contacto-main{
-    line-height: 35px;
-    font-size: 27px;
-    }
-   .contactos-footer__texto{
+    .contactos-footer__texto{
     font-size: 15px
     }
 }
@@ -198,7 +203,21 @@
     .card__body1 {
     font-size: 12.5px;
     line-height: 1.1rem;
-    }    
+    } 
+    /*contactos*/ 
+    .main__container {
+    padding-bottom: 285px;
+    }
+    .main__h1 {
+    font-size: 4em;
+    }
+    .main__h2 {
+    font-size: 33px;
+    color: #e9893a;
+    } 
+    .main__p {
+    font-size: 2em;
+    } 
 }
         /* movil */
 @media screen and (max-width: 600px) {
@@ -436,7 +455,7 @@
      line-height: 1.8rem;
      }
      #textoservicios {
-     top: 79px;
+     top: 90px;
      font-size: 4rem;
      right: 25%;
      }
@@ -449,9 +468,12 @@
       padding: 0px; 
      }
      .servicios-grid__container2 a {
-     top: 85px;
+     top: 135px;
      right: 29%;
      font-size: 30px;
+     }
+     .servicios-grid__container2{
+        height: 361px;
      }
 
 /* contactos*/
@@ -493,12 +515,21 @@
     .contactos-grid {
     grid-template-rows: repeat(1, 624.9px);
     }
+    .main__container {
+    padding-bottom: 110px;
+    }
 }
 
 @media screen and (max-width: 320px){
 /*  inicio */
     .overlay-inicio1 {
     height: 75%;
+    }
+    .main__container {
+    padding-bottom: 140px;
+    }
+    .main__p {
+    font-size: 1em;
     }
 /* contactos*/
     .contacto-main{
@@ -518,8 +549,14 @@
     height: 29px;
     margin-top: 10px;
     }
+    form label {
+    width: 80px;
+    }
+    .contacto__textarea {
+    margin-left: 28px;
+    }
     .contactos-grid {
-     grid-template-rows: repeat(1, 634.9px);
+     grid-template-rows: repeat(1, 637.9px);
     }
     .inicio-overlay__title1 {
     margin-top: 120px;
@@ -553,12 +590,15 @@
      }
      .servicios-grid__container2 a {
      font-size: 22px;
-     top: 78px;
+     top: 138px;
      right: 29%;
      }
      #textoservicios {
-     top: 50px;
+     top: 60px;
      right: 20%;
+     }
+     .servicios-grid__container2{
+        height: 309px;
      }
     .titulo9 {
      right: 9%;

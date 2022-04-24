@@ -1152,7 +1152,7 @@ body[data-aos-duration="400"] [data-aos] {
   font-size: 20px; }
 
 .foto {
-  width: 50%;
+  width: 60%;
   height: 40%; }
 
 /*...... media querys...... */
@@ -1533,7 +1533,7 @@ body[data-aos-duration="400"] [data-aos] {
   .contacto__textarea {
     margin-left: 10px; } }
 
-@media screen and (max-width: 358px) {
+@media screen and (max-width: 371px) {
   .servicios-grid__container1 {
     font-size: 24px;
     padding: 21.9px; }
@@ -1557,7 +1557,7 @@ body[data-aos-duration="400"] [data-aos] {
     top: 25px;
     right: 14%; }
   .titulo82 {
-    top: 255px;
+    top: 265px;
     padding: 0px; }
   .titulo82 {
     font-size: 15.5px; }
@@ -1651,6 +1651,9 @@ body[data-aos-duration="400"] [data-aos] {
     line-height: 1.3rem; }
   .servicios-grid__container {
     height: 280px; }
+  .foto {
+    width: 60%;
+    height: 33%; }
   /*productos*/
   .card-text {
     margin-left: 0px;

@@ -525,7 +525,7 @@
     margin-left: 10px;
     }
 }
-@media screen and (max-width: 358px){
+@media screen and (max-width: 371px){
     .servicios-grid__container1 {
      font-size: 24px;
      padding: 21.9px;
@@ -556,7 +556,7 @@
      right: 14%;
      }
      .titulo82 {
-      top: 255px;
+      top: 265px;
       padding: 0px; 
      }
      .titulo82 {
@@ -684,12 +684,17 @@
     .servicios-grid__container{
       height: 280px;
     }
+    .foto {
+    width: 60%;
+    height: 33%;
+    
+    }
      /*productos*/
      .card-text{
      margin-left: 0px;
      margin-bottom: 14px;
      font-size: 16px;
      }
-
+    
 
 }

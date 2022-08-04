@@ -33,43 +33,40 @@ let prod3ConEnvio = plus(finalProd3, envio);
 
 
 function comprar1(){    
-    let seccion = document.getElementById("seccionPrecio");
-    seccion.removeAttribute("hidden");
-
     let envio = document.getElementById("box1");
     let total = envio.checked ? prod1ConEnvio : finalProd1
-
-    let precioFinalLabel = document.getElementById("precioFinal");
-    precioFinalLabel.innerHTML = `El precio final de tu Mueble con el 20% de descuentos es: ${total} pesos chilenos.`
-}
+    Swal.fire(
+        'Tu producto se agrego al carrito',
+        `El precio final de tu Mueble con el 20% de descuentos es: ${total} pesos chilenos.`
+    )
+};
 
 function comprar2(){
-    let seccion = document.getElementById("seccionPrecio")
-    seccion.removeAttribute("hidden")
-
     envio = document.getElementById("box2");
     total = envio.checked ? prod2ConEnvio : finalProd2
-
-    let precioFinalLabel = document.getElementById("precioFinal")
-    precioFinalLabel.innerHTML = `El precio final de tu Mueble con el 20% de descuentos es: ${total} pesos chilenos.`   
-}
+    Swal.fire(
+        'Tu producto se agrego al carrito',
+        `El precio final de tu Mueble con el 20% de descuentos es: ${total} pesos chilenos.`
+    ) 
+};
 
 function comprar3(){
-    let seccion = document.getElementById("seccionPrecio")
-    seccion.removeAttribute("hidden")
-
     envio = document.getElementById("box3");
     total = envio.checked ? prod3ConEnvio : finalProd3
+    Swal.fire(
+        'Tu producto se agrego al carrito',
+        `El precio final de tu Mueble con el 20% de descuentos es: ${total} pesos chilenos.`
+    ) 
+};
 
-    let precioFinalLabel = document.getElementById("precioFinal")
-    precioFinalLabel.innerHTML = `El precio final de tu Mueble con el 20% de descuentos es: ${total} pesos chilenos.`  
-}
+let boton = document.getElementById("btnComprar");
+boton.addEventListener("click", comprar1);
 
-let boton = document.getElementById("btnComprar")
-boton.addEventListener("click", comprar1)
+boton = document.getElementById("btn2Comprar");
+boton.addEventListener("click", comprar2);
 
-boton = document.getElementById("btn2Comprar")
-boton.addEventListener("click", comprar2)
+boton = document.getElementById("btn3Comprar");
+boton.addEventListener("click", comprar3);
 
-boton = document.getElementById("btn3Comprar")
-boton.addEventListener("click", comprar3)
+
+ 
